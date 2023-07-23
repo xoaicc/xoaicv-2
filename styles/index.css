@@ -1,0 +1,202 @@
+:root {
+    /* Color scheme in light mode */
+    --color-0l-100: rgba(255, 255, 255, 1);
+    --color-1l-100: rgba(22, 38, 47, 1);
+    --color-2l-100: rgba(141, 191, 201, 1);
+    --color-3l-100: rgba(251, 249, 217, 1);
+    --color-3l-50: rgba(251, 249, 217, 0.5);
+    --color-4l-100: rgba(228, 187, 97, 1);
+    --color-5l-100: rgba(166, 0, 0, 1);
+
+    /* Color scheme in dark mode */
+    --color-0d-100: rgba(0, 0, 0, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    color: var(--color-1l-100);
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-full {
+    width: 100%;
+}
+
+.wrapper-half {
+    width: 48%;
+}
+
+.path {
+    width: 24%;
+    padding: 10px;
+}
+.path + .path {
+    margin-left: 1%;
+}
+.path-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flat-block {
+    background-color: var(--color-3l-100);
+    border: 3px solid var(--color-4l-100);
+    box-shadow: -6px 6px 0 var(--color-1l-100);
+}
+
+body {
+    background-color: var(--color-0l-100);
+    width: 100vw;
+    position: relative;
+}
+
+span h4 {
+    display: inline;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    padding: 0 2%;
+    margin: 0 5%;
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+main {
+}
+
+main section {
+    padding: 10%;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main #intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-3l-100);
+}
+
+main #intro #intro-container {
+    width: 60%;
+}
+
+main #resume {
+    background-color: var(--color-3l-50);
+}
+
+main #resume #my-objective {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+main #resume #my-feature {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #qualification {
+    background-color: var(--color-3l-100);
+}
+
+main #qualification #my-education {
+    display: flex;
+    width: 100%;
+}
+
+main #qualification #my-skill div.wrapper-full {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #qualification #my-skill ul.inline-list li {
+    display: inline-block;
+}
+
+main #experience {
+    background-color: var(--color-3l-50);
+}
+
+main #experience #my-career {
+    display: flex;
+    width: 100%;
+}
+
+main #portfolio {
+    background-color: var(--color-3l-100);
+}
+
+main #portfolio div.wrapper-full {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #portfolio div.wrapper-full .project {
+    width: 24%;
+    padding: 10px;
+}
+
+main #contact {
+    background-color: var(--color-3l-50);
+}
+
+main #contact div.wrapper-full {
+    display: flex;
+}
+
+main #contact #contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+main #contact #contact-info .contact-box {
+    width: 48%;
+    height: 45%;
+    padding: 10px;
+}
+
+main #contact #contact-form {
+    padding: 0 100px;
+}
+
+main #contact #contact-form form {
+    padding: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: .7rem;
+}

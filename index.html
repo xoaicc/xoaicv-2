@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial">
     </head>
     <body>
-        <header>
+        <header class="flat-block">
             <div id="name">XoaiCV</div>
             
             <nav id="menu">
@@ -28,48 +28,56 @@
 
         <main>
             <section id="intro">
-                <div id="intro-logo">
-                    <img>
-                </div>
-                <div id="intro-content">
-                    <h1 class="en">Vuong Do</h1>
-                    <h3 class="en"><span>I am</span>Web Developer</h3>
-                    <p>Hi, I am a Fresher with 1 years of experience in Information Technology. I am skilled in Web development and have a passion for Web developer. Contact me at xoaic@xcc.one or visit my website at XoaiCV.</p>
-                    <button>Download CV</button>
+                <div id="intro-container">
+                    <div id="intro-logo">
+                        <img>
+                    </div>
+                    <div id="intro-content">
+                        <h1 class="en">Vuong Do</h1>
+                        <h3 class="en"><span>I am</span>Web Developer</h3>
+                        <p>Hi, I am a Fresher with 1 years of experience in Information Technology. I am skilled in Web development and have a passion for Web developer. Contact me at xoaic@xcc.one or visit my website at XoaiCV.</p>
+                        <button>Download CV</button>
+                    </div>
                 </div>
             </section>
             
             <section id="resume">
                 <h2>Resume</h2>
-                <div id="my-objective">
-                    <p>"I wanna to be the best, to incoporate with the best team and to work in the best company in my major field!"</p>
-                </div>
-                <div id="my-feature">
-                    <div id="feature-1" class="feature">
-                        <h2 class="count">10+</h2>
-                        <h4>Years experience in Web development</h4>
+                <div class="container">
+                    <div class="wrapper-half">
+                        <div id="my-objective" class="flat-block">
+                            <p>"I wanna to be the best, to incoporate with the best team and to work in the best company in my major field!"</p>
+                        </div>
+                        <div id="my-feature">
+                            <div id="feature-1" class="feature wrapper-half flat-block">
+                                <h2 class="count">10+</h2>
+                                <h4>Years experience in Web development</h4>
+                            </div>
+                            <div id="feature-2" class="feature wrapper-half flat-block">
+                                <h2 class="count">10+</h2>
+                                <h4>Large projects were released</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div id="feature-2" class="feature">
-                        <h2 class="count">10+</h2>
-                        <h4>Large projects were released</h4>
+                    <div id="my-info" class="wrapper-half flat-block">
+                        <ul id="info-list">
+                            <li><span>Birthday</span>Feb 02, 2001</li>
+                            <li><span>Address</span>Me Linh, Ha Noi</li>
+                            <li><span>Phone</span>+84 383 398 867</li>
+                            <li><span>Email</span>Minhvuong25012001@gmail.com</li>
+                            <li><span>Website</span>XoaiCC.id.vn</li>
+                        </ul>
                     </div>
-                </div>
-                <div id="my-info">
-                    <ul id="info-list">
-                        <li><span>Birthday</span>Feb 02, 2001</li>
-                        <li><span>Address</span>Me Linh, Ha Noi</li>
-                        <li><span>Phone</span>+84 383 398 867</li>
-                        <li><span>Email</span>Minhvuong25012001@gmail.com</li>
-                        <li><span>Website</span>XoaiCC.id.vn</li>
-                    </ul>
                 </div>
             </section>
             
             <section id="qualification">
                 <h2>Qualification</h2>
-                <div id="my-education" class="path">
-                    <h3>My education path</h3>
-                    <div>
+                <div id="my-education">
+                    <div class="path flat-block path-first">
+                        <h3>My education path</h3>
+                    </div>
+                    <div class="path flat-block-2">
                         <h5>JUN 2023 - NOW</h5>
                         <p>Study <span><h4>Web Fullstack</h4></span> at <span><h4>Codecademy</h4></span></p>
                         <p>Achived: <span>
@@ -77,7 +85,7 @@
                             </ul>
                         </span></p>
                     </div>
-                    <div>
+                    <div class="path flat-block">
                         <h5>FEB 2023 - MAR 2023</h5>
                         <p>Study <span><h4>Java</h4></span> at <span><h4>FPT Software Academy</h4></span></p>
                         <p>Achived: <span>
@@ -87,7 +95,7 @@
                             </ul>
                         </span></p>
                     </div>
-                    <div>
+                    <div class="path flat-block-2">
                         <h5>SEP 2019 - NOW</h5>
                         <p>Study <span><h4>Information Technology</h4></span> at <span><h4>Hanoi University</h4></span></p>
                         <p>Achived: <span>
@@ -98,52 +106,54 @@
                     </div>
                 </div>
                 <div id="my-skill">
-                    <h3>Evaluation of productivity</h3>
-                    <div id="productivity">
-                        <div id="office-tool">
-                            <h4>Office tools</h4>
-                            <ul>
-                                <li>Excel <span>B</span></li>
-                                <li>PowerPoint <span>C+</span></li>
-                            </ul>
+                    <div class="wrapper-full">
+                        <div id="productivity" class="wrapper-half flat-block">
+                            <h3>Evaluation of productivity</h3>
+                            <div id="office-tool">
+                                <h4>Office tools</h4>
+                                <ul class="inline-list">
+                                    <li>Excel <span>B</span></li>
+                                    <li>PowerPoint <span>C+</span></li>
+                                </ul>
+                            </div>
+                            <div id="development-tool">
+                                <h4>Development tools</h4>
+                                <ul class="inline-list">
+                                    <li>VS Code <span>C+</span></li>
+                                    <li>IntelliJ <span>B</span></li>
+                                    <li>Git & Github <span>C</span></li>
+                                    <li>Postman <span>C</span></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div id="development-tool">
-                            <h4>Development tools</h4>
-                            <ul>
-                                <li>VS Code <span>C+</span></li>
-                                <li>IntelliJ <span>B</span></li>
-                                <li>Git & Github <span>C</span></li>
-                                <li>Postman <span>C</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="proficiency">
-                        <h3>Evaluation of proficiency</h3>
-                        <div id="communication-language">
-                            <h4>Communication language</h4>
-                            <ul>
-                                <li>English <span>B2</span></li>
-                            </ul>
-                        </div>
-                        <div id="coding-language">
-                            <h4>Coding language</h4>
-                            <ul>
-                                <li>HTML <span>B+</span></li>
-                                <li>CSS/SCSS <span>B</span></li>
-                                <li>JavaScript <span>B</span></li>
-                                <li>Java <span>B</span></li>
-                                <li>SQL <span>C+</span></li>
-                                <li>Python <span>C+</span></li>
-                                <li>PHP <span>D+</span></li>
-                            </ul>
-                        </div>
-                        <div id="framework-language">
-                            <h4>Framework language</h4>
-                            <ul>
-                                <li>Reactjs <span>C+</span></li>
-                                <li>Nodejs <span>C</span></li>
-                                <li>MySQL <span>C</span></li>
-                            </ul>
+                        <div id="proficiency" class="wrapper-half flat-block">
+                            <h3>Evaluation of proficiency</h3>
+                            <div id="communication-language">
+                                <h4>Communication language</h4>
+                                <ul class="inline-list">
+                                    <li>English <span>B2</span></li>
+                                </ul>
+                            </div>
+                            <div id="coding-language">
+                                <h4>Coding language</h4>
+                                <ul class="inline-list">
+                                    <li>HTML <span>B+</span></li>
+                                    <li>CSS/SCSS <span>B</span></li>
+                                    <li>JavaScript <span>B</span></li>
+                                    <li>Java <span>B</span></li>
+                                    <li>SQL <span>C+</span></li>
+                                    <li>Python <span>C+</span></li>
+                                    <li>PHP <span>D+</span></li>
+                                </ul>
+                            </div>
+                            <div id="framework-language">
+                                <h4>Framework language</h4>
+                                <ul class="inline-list">
+                                    <li>Reactjs <span>C+</span></li>
+                                    <li>Nodejs <span>C</span></li>
+                                    <li>MySQL <span>C</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,155 +176,164 @@
             </section>
             
             <section id="experience">
-                <h2>My career path</h2>
-                <div>
-                    <h5>MAY 2023 - JUL 2023</h5>
-                    <p>Be <span><h4>IT supervisor</h4></span> at <span><h4>SABECO Jsc</h4></span></p>
-                    <p>Gained: <span>
-                        <ul>
-                            <li>Knowledge about managing the data, arranging human and electronic devices.</li>
-                            <li>Accomplish missons contentedly in a big company in the digital transformation progress.</li>
-                        </ul>
-                    </span></p>
-                </div>
-                <div>
-                    <h5>AUG 2022 - OCT 2022</h5>
-                    <p>Be <span><h4>Manual Tester</h4></span> at <span><h4>Test IO platform</h4></span></p>
-                    <p>Gained: <span>
-                        <ul>
-                            <li>Knowledge about a lot of errors of modern websites nowadays and way of error reporting.</li>
-                            <li>Experience about testing in testcases.</li>
-                        </ul>
-                    </span></p>
-                </div>
-                <div>
-                    <h5>SEP 2020 - NOW</h5>
-                    <p>Be <span><h4>Webmaster</h4></span> at <span><h4>[...]</h4></span></p>
-                    <p>Gained: <span>
-                        <ul>
-                            <li>Knowledge about wide range of website types.</li>
-                            <li>Experience about website management.</li>
-                        </ul>
-                    </span></p>
+                <h2>Experience</h2>
+                <div id="my-career">
+                    <div class="path flat-block path-first">
+                        <h3>My career path</h3>
+                    </div>
+                    <div class="path flat-block-2">
+                        <h5>MAY 2023 - JUL 2023</h5>
+                        <p>Be <span><h4>IT supervisor</h4></span> at <span><h4>SABECO Jsc</h4></span></p>
+                        <p>Gained: <span>
+                            <ul>
+                                <li>Knowledge about managing the data, arranging human and electronic devices.</li>
+                                <li>Accomplish missons contentedly in a big company in the digital transformation progress.</li>
+                            </ul>
+                        </span></p>
+                    </div>
+                    <div class="path flat-block">
+                        <h5>AUG 2022 - OCT 2022</h5>
+                        <p>Be <span><h4>Manual Tester</h4></span> at <span><h4>Test IO platform</h4></span></p>
+                        <p>Gained: <span>
+                            <ul>
+                                <li>Knowledge about a lot of errors of modern websites nowadays and way of error reporting.</li>
+                                <li>Experience about testing in testcases.</li>
+                            </ul>
+                        </span></p>
+                    </div>
+                    <div class="path flat-block-2">
+                        <h5>SEP 2020 - NOW</h5>
+                        <p>Be <span><h4>Webmaster</h4></span> at <span><h4>[...]</h4></span></p>
+                        <p>Gained: <span>
+                            <ul>
+                                <li>Knowledge about wide range of website types.</li>
+                                <li>Experience about website management.</li>
+                            </ul>
+                        </span></p>
+                    </div>
                 </div>
             </section>
             <section id="portfolio">
                 <h2>Feature projects</h2>
-                <div class="project">
-                    <h3>XoaiCV 2</h3>
-                    <h4>CV & portfolio website</h4>
-                    <p><strong>Description:</strong> A project to introduce myself version 2<br>
-                    <strong>Human:</strong> Individual<br>
-                    <strong>Technique:</strong>
-                    <span class="project-technique">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
-                        </ul>
-                    </span>
-                    <span class="project-link">
-                        <button><a href="http://">Visit Web</a></button>
-                        <button><a href="http://">Show Code</a></button>
-                    </span></p>
-                </div>
-                <div class="project">
-                    <h3>Mangah</h3>
-                    <h4>Comic Reading website</h4>
-                    <p><strong>Description:</strong> An interesting non-profit project to my taste<br>
-                    <strong>Human:</strong> Individual<br>
-                    <strong>Technique:</strong>
-                    <span class="project-technique">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS/SCSS</li>
-                            <li>Reactjs</li>
-                        </ul>
-                    </span>
-                    <span class="project-link">
-                        <button><a href="http://">Visit Web</a></button>
-                        <button><a href="http://">Show Code</a></button>
-                    </span></p>
-                </div>
-                <div class="project">
-                    <h3>XoaiCV</h3>
-                    <h4>CV & portfolio website</h4>
-                    <p><strong>Description:</strong> A project to introduce myself<br>
-                    <strong>Human:</strong> Individual<br>
-                    <strong>Technique:</strong>
-                    <span class="project-technique">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
-                        </ul>
-                    </span>
-                    <span class="project-link">
-                        <button><a href="http://">Visit Web</a></button>
-                        <button><a href="http://">Show Code</a></button>
-                    </span></p>
-                </div>
-                <div class="project">
-                    <h3>Cloud Store</h3>
-                    <h4>Electronic commerce website</h4>
-                    <p><strong>Description:</strong> A group project in the university<br>
-                    <strong>Human:</strong> 6 members<br>
-                    <strong>Technique:</strong>
-                    <span class="project-technique">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
-                            <li>Spring Boot</li>
-                        </ul>
-                    </span>
-                    <span class="project-link">
-                        <button><a href="http://">Visit Web</a></button>
-                        <button><a href="http://">Show Code</a></button>
-                    </span></p>
+                <div class="wrapper-full">
+                    <div class="project flat-block">
+                        <h3>XoaiCV 2</h3>
+                        <h4>CV & portfolio website</h4>
+                        <p><strong>Description:</strong> A project to introduce myself version 2<br>
+                        <strong>Human:</strong> Individual<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
+                        </span>
+                        <span class="project-link">
+                            <button><a href="http://">Visit Web</a></button>
+                            <button><a href="http://">Show Code</a></button>
+                        </span></p>
+                    </div>
+                    <div class="project flat-block">
+                        <h3>Mangah</h3>
+                        <h4>Comic Reading website</h4>
+                        <p><strong>Description:</strong> An interesting non-profit project to my taste<br>
+                        <strong>Human:</strong> Individual<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS/SCSS</li>
+                                <li>Reactjs</li>
+                            </ul>
+                        </span>
+                        <span class="project-link">
+                            <button><a href="http://">Visit Web</a></button>
+                            <button><a href="http://">Show Code</a></button>
+                        </span></p>
+                    </div>
+                    <div class="project flat-block">
+                        <h3>XoaiCV</h3>
+                        <h4>CV & portfolio website</h4>
+                        <p><strong>Description:</strong> A project to introduce myself<br>
+                        <strong>Human:</strong> Individual<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
+                        </span>
+                        <span class="project-link">
+                            <button><a href="http://">Visit Web</a></button>
+                            <button><a href="http://">Show Code</a></button>
+                        </span></p>
+                    </div>
+                    <div class="project flat-block">
+                        <h3>Cloud Store</h3>
+                        <h4>Electronic commerce website</h4>
+                        <p><strong>Description:</strong> A group project in the university<br>
+                        <strong>Human:</strong> 6 members<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>Spring Boot</li>
+                            </ul>
+                        </span>
+                        <span class="project-link">
+                            <button><a href="http://">Visit Web</a></button>
+                            <button><a href="http://">Show Code</a></button>
+                        </span></p>
+                    </div>
                 </div>
             </section>
             <section id="contact">
                 <h2>Get contact</h2>
-                <div id="contact-info">
-                    <div id="chat-with-me">
-                        <h3>Chat with me</h3>
-                        <p>Chat platform is the best channel to converse with me</p>
-                        <button><a href="http://">Zalo</a></button>
-                        <button><a href="http://">Messenger</a></button>
+                <div class="wrapper-full">
+                    <div id="contact-info" class="wrapper-half">
+                        <div id="chat-with-me" class="contact-box flat-block">
+                            <h3>Chat with me</h3>
+                            <p>Chat platform is the best channel to converse with me</p>
+                            <button><a href="http://">Zalo</a></button>
+                            <button><a href="http://">Messenger</a></button>
+                        </div>
+                        <div id="call-to-me" class="contact-box flat-block">
+                            <h3>Call to me</h3>
+                            <p>If you don't want to wait... please call me in the administrative time</p>
+                            <button><a href="http://">+84383398867</a></button>
+                        </div>
+                        <div id="hire-me-in" class="contact-box flat-block">
+                            <h3>Hire me in</h3>
+                            <p>A good way to know more about me before hiring</p>
+                            <button><a href="http://">Linkedln</a></button>
+                        </div>
+                        <div id="face-to-face" class="contact-box flat-block">
+                            <h3>Face to face</h3>
+                            <p>Well, you are so serious when take this choice</p>
+                            <address>Thanh Van, Thanh Lam, Me Linh, Ha Noi</address>
+                        </div>
                     </div>
-                    <div id="call-to-me">
-                        <h3>Call to me</h3>
-                        <p>If you don't want to wait... please call me in the administrative time</p>
-                        <button><a href="http://">+84383398867</a></button>
+                    <div id="contact-form" class="wrapper-half">
+                        <h3><i>or</i> Send me an email</h3>
+                        <form method="post" class="flat-block">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="firstname">
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lastname">
+                            <label for="email">Your email:</label>
+                            <input type="email" id="email" name="email">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject">
+                            <label for="message">Message:</label>
+                            <input type="textarea" id="message" name="message">
+    
+                            <input type="submit" value="Send message">
+                        </form>
                     </div>
-                    <div id="hire-me-in">
-                        <h3>Hire me in</h3>
-                        <p>A good way to know more about me before hiring</p>
-                        <button><a href="http://">Linkedln</a></button>
-                    </div>
-                    <div id="face-to-face">
-                        <h3>Face to face</h3>
-                        <p>Well, you are so serious when take this choice</p>
-                        <address>Thanh Van, Thanh Lam, Me Linh, Ha Noi</address>
-                    </div>
-                </div>
-                <div id="contact-form">
-                    <h3><i>or</i> Send me an email</h3>
-                    <form method="post">
-                        <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="firstname">
-                        <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lastname">
-                        <label for="email">Your email:</label>
-                        <input type="email" id="email" name="email">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject">
-                        <label for="message">Message:</label>
-                        <input type="textarea" id="message" name="message">
-
-                        <input type="submit" value="Send message">
-                    </form>
                 </div>
             </section>
         </main>
