@@ -47,10 +47,23 @@ ul li {
     list-style-type: none;
 }
 
+i {
+    font-size: .8rem;
+    color: inherit;
+    padding: 3px;
+    display: inline-flex;
+    align-items: center;
+}
+
+i::before {
+    line-height: 0;
+}
+
 button, select {
     background-color: var(--color-3l-100);
     border: 3px solid var(--color-2l-100);
     padding: 5px;
+    height: 100%;
     cursor: pointer;
 }
 button + button {
@@ -158,6 +171,10 @@ input[type="submit"] {
     transition: .3s;
 }
 
+.inline-list {
+    display: inline;
+}
+
 .inline-list li {
     display: inline-block;
 }
@@ -198,6 +215,10 @@ input[type="submit"] {
 
 .content {
     margin: 10px 0;
+}
+
+.hidden {
+    display: none;
 }
 
 body {
@@ -261,12 +282,30 @@ header #switcher .switcher-inner + .switcher-inner {
     margin-left: 10px;
 }
 
+header #switcher #mode-switcher {
+    display: flex;
+    cursor: pointer;
+}
+
+header #switcher #mode-switcher i {
+    font-size: 1.2rem;
+    border: 3px solid var(--color-2l-100);
+}
+
+header #switcher #mode-switcher i::before {
+    margin: auto;
+}
+
 main section {
     padding: 10%;
 }
 
 main section h2 {
     border: 3px solid var(--color-4l-100);
+}
+
+main .inner-section {
+    margin-bottom: 5%;
 }
 
 main #intro {
@@ -365,6 +404,20 @@ main #resume #my-feature .feature .count {
 
 main #resume #my-info {
     padding: 3%;
+    position: relative;
+    overflow: hidden;
+}
+main #resume #my-info::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    width: 50%;
+    height: 100%;
+    background-image: url("../assets/images/doraemon-deco.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 }
 
 main #resume #my-info #info-list {
@@ -389,12 +442,23 @@ main #qualification #my-education {
     width: 100%;
 }
 
-main #qualification #my-skill .container + .container {
-    margin-top: 50px;
-}
-
 main #qualification #my-skill div.item-inner{
     margin: 10px 0;
+}
+
+main #qualification #my-certification div.carousel .carousel-inner {
+    display: flex;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+main #qualification #my-certification div.carousel .carousel-inner img {
+    border: 3px solid var(--color-4l-100);
+    max-height: 300px;
+    height: auto;
+}
+main #qualification #my-certification div.carousel .carousel-inner img + img {
+    margin-left: 10px;
 }
 
 main #experience {
@@ -404,6 +468,15 @@ main #experience {
 main #experience #my-career {
     display: flex;
     width: 100%;
+}
+
+main #experience #my-career div.content ul li {
+    list-style-type: "» ";
+    margin-left: 20px;
+}
+
+main #experience #my-career div.content ul li + li {
+    margin-top: 5px;
 }
 
 main #portfolio {
