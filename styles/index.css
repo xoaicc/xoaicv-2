@@ -25,17 +25,23 @@
     padding: 0;
 }
 
-html {
+html,
+button,
+select,
+option {
     font-size: 16px;
     font-family: 'JetBrains Mono', monospace;
     color: var(--color-1l-100);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin: 15px 0;
 }
 
@@ -59,14 +65,16 @@ i::before {
     line-height: 0;
 }
 
-button, select {
+button,
+select {
     background-color: var(--color-3l-100);
     border: 3px solid var(--color-2l-100);
     padding: 5px;
     height: 100%;
     cursor: pointer;
 }
-button + button {
+
+button+button {
     background-color: var(--color-3l-100);
     border: 3px solid var(--color-4l-100);
 }
@@ -76,15 +84,22 @@ button a {
     color: inherit;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     background-color: var(--color-0l-100);
     border: 3px solid var(--color-2l-100);
     padding: 3px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus,
+select[data-chosen] {
     outline: none;
+}
+
+input:focus,
+textarea:focus {
     border: 3px solid var(--color-5l-100);
 }
 
@@ -112,8 +127,10 @@ input[type="submit"] {
 .path-line {
     position: relative;
 }
+
 .path-line::before {
     content: "<";
+    width: -moz-fit-content;
     width: fit-content;
     height: fit-content;
     position: absolute;
@@ -122,6 +139,7 @@ input[type="submit"] {
     font-size: 2rem;
     color: var(--color-4l-100);
 }
+
 .path-line::after {
     content: "";
     width: 100%;
@@ -132,10 +150,11 @@ input[type="submit"] {
 }
 
 .path {
-    width: 24%;
+    /* width: 24%; */
     min-height: 200px;
 }
-.path + .path {
+
+.path+.path {
     margin-left: 1%;
 }
 
@@ -153,7 +172,9 @@ input[type="submit"] {
     transform: translate(3px, -3px);
     transition: .3s;
 }
-.flat-block:hover, .flat-block:active {
+
+.flat-block:hover,
+.flat-block:active {
     box-shadow: none;
     transform: translate(0, 0);
     transition: .3s;
@@ -165,7 +186,9 @@ input[type="submit"] {
     border: 3px solid var(--color-4l-100);
     transition: .3s;
 }
-.flat-block-2:hover, .flat-block-2:active {
+
+.flat-block-2:hover,
+.flat-block-2:active {
     box-shadow: -6px 6px 0 var(--color-5l-100);
     transform: translate(3px, -3px);
     transition: .3s;
@@ -178,9 +201,11 @@ input[type="submit"] {
 .inline-list li {
     display: inline-block;
 }
+
 .inline-list li.odd {
     border: 3px solid var(--color-2l-100);
 }
+
 .inline-list li.even {
     border: 3px solid var(--color-4l-100);
 }
@@ -270,7 +295,8 @@ header #menu a {
     color: inherit;
     text-decoration: none;
 }
-header #menu a + a {
+
+header #menu a+a {
     margin-left: 20px;
 }
 
@@ -278,7 +304,7 @@ header #switcher {
     display: flex;
 }
 
-header #switcher .switcher-inner + .switcher-inner {
+header #switcher .switcher-inner+.switcher-inner {
     margin-left: 10px;
 }
 
@@ -316,7 +342,7 @@ main #intro {
     align-items: center;
     background-color: var(--color-3l-100);
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 main #intro div.container {
@@ -364,10 +390,12 @@ main #resume #my-objective span {
     font-size: 2rem;
     position: relative;
 }
+
 main #resume #my-objective span.left {
     bottom: 25px;
     right: 15px;
 }
+
 main #resume #my-objective span.right {
     top: 25px;
     left: 15px;
@@ -388,7 +416,8 @@ main #resume #my-feature .feature {
     padding-left: 3%;
     padding-right: 3%;
 }
-main #resume #my-feature .feature + .feature {
+
+main #resume #my-feature .feature+.feature {
     margin-left: 10px;
 }
 
@@ -396,6 +425,7 @@ main #resume #my-feature .feature .count {
     font-size: 3rem;
     margin: auto;
     margin-top: -2.5rem;
+    width: -moz-fit-content;
     width: fit-content;
     color: var(--color-5l-100);
     background-color: var(--color-3l-100);
@@ -407,6 +437,7 @@ main #resume #my-info {
     position: relative;
     overflow: hidden;
 }
+
 main #resume #my-info::after {
     content: "";
     position: absolute;
@@ -432,6 +463,7 @@ main #resume #my-info #info-list li span {
     display: inline-block;
     padding: 3px;
     background-color: var(--color-2l-50);
+    overflow: hidden;
 }
 
 main #qualification {
@@ -442,7 +474,7 @@ main #qualification #my-education {
     width: 100%;
 }
 
-main #qualification #my-skill div.item-inner{
+main #qualification #my-skill div.item-inner {
     margin: 10px 0;
 }
 
@@ -456,7 +488,8 @@ main #qualification #my-certification div.carousel .carousel-inner img {
     max-height: 300px;
     height: auto;
 }
-main #qualification #my-certification div.carousel .carousel-inner img + img {
+
+main #qualification #my-certification div.carousel .carousel-inner img+img {
     margin-left: 10px;
 }
 
@@ -478,11 +511,11 @@ main #experience #my-career {
 }
 
 main #experience #my-career div.content ul li {
-    list-style-type: "» ";
+    list-style-type: "> ";
     margin-left: 20px;
 }
 
-main #experience #my-career div.content ul li + li {
+main #experience #my-career div.content ul li+li {
     margin-top: 5px;
 }
 
@@ -550,4 +583,56 @@ footer {
     width: 100vw;
     text-align: center;
     font-size: .7rem;
+}
+
+@media only screen and (max-width: 1280px) {
+    header #menu {
+        display: none;
+    }
+
+    main #contact #contact-form {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    label {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .wrapper-half {
+        width: 100%;
+    }
+
+    .path {
+        width: 100%;
+    }
+
+    .flat-block+.flat-block-2:not(.duo),
+    .flat-block-2+.flat-block:not(.duo),
+    .flat-block+.flat-block,
+    .wrapper-half:not(.duo) {
+        margin-top: 20px;
+    }
+
+    main #intro div.container {
+        width: 100%;
+    }
+
+    main #intro #intro-content h1 {
+        top: 5%;
+        font-size: 14rem;
+    }
+
+    main #portfolio div.wrapper-full .project {
+        width: 100%;
+    }
+
+    main #contact #contact-info {
+        height: 600px;
+    }
 }

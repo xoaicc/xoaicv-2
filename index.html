@@ -1,400 +1,446 @@
 <!DOCTYPE html>
-<html lang="en" lang="vi">
-    <head>
-        <title>XoaiCV - My CV & porfolio</title>
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="icon" href="assets/images/xoaicc-logo.png">
-        <meta name="viewport" content="width=device-width, initial">
-    </head>
-    <body>
-        <header class="flat-block-2">
-            <div id="name"><a href="/">XoaiCV</a></div>
-            
-            <nav id="menu">
-                <a href="#intro">Top <i class="fi fi-rs-arrow-up-to-dotted-line"></i></a>
-                <a href="#resume">Resume</a>
-                <a href="#qualification">Qualification</a>
-                <a href="#experience">Experience</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            
-            <div id="switcher">
-                <div id="lang-switcher" class="switcher-inner">
-                    <label for="language">Language:</label>
-    
-                    <select name="language" id="language">
-                        <option value="english">English</option>
-                        <option value="vietnamese">Tiếng Việt</option>
-                    </select>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial">
+    <title>XoaiCV - My CV &amp; porfolio</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="assets/images/xoaicc-logo.png">
+</head>
+<body>
+    <header class="flat-block-2">
+        <div id="name"><a href="/">XoaiCV</a></div>
+
+        <nav id="menu">
+            <a href="#intro">Top <i class="fi fi-rs-arrow-up-to-dotted-line"></i></a>
+            <a href="#resume">Resume</a>
+            <a href="#qualification">Qualification</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="switcher">
+            <div id="lang-switcher" class="switcher-inner">
+                <label for="language">Language:</label>
+
+                <select name="language" id="language" onchange=" this.dataset.chosen = this.value; ">
+                    <option value="english">English</option>
+                    <option value="vietnamese">Vietnamese</option>
+                </select>
+            </div>
+
+            <div id="mode-switcher" class="switcher-inner">
+                <i class="fi fi-rs-cloud-sun hidden"></i>
+                <i class="fi fi-rs-moon-stars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <div id="intro-logo">
                 </div>
-    
-                <div id="mode-switcher" class="switcher-inner">
-                    <i class="fi fi-rs-cloud-sun hidden"></i>
-                    <i class="fi fi-rs-moon-stars"></i>
+                <div id="intro-content">
+                    <h1>Vuong Do</h1>
+                    <div class="content flat-block-2">
+                        <h3><span>I am</span> Web Developer</h3>
+                        <p>Welcome to my <span style="color: var(--color-5l-100)"><strong>personal
+                                    website</strong></span>! To <strong>explore</strong> all necessary information about
+                            me, let's scroll down. Otherwise, you can <strong>download</strong> my CV right here <i
+                                class="fi fi-rs-chevron-double-down"></i></p>
+                        <button>Download CV <i class="fi fi-rs-file-download"></i></button>
+                    </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main>
-            <section id="intro">
-                <div class="container">
-                    <div id="intro-logo">
-                        <img>
+        <section id="resume">
+            <h2>Quick Resume</h2>
+            <div class="container">
+                <div class="wrapper-half">
+                    <div id="my-objective" class="flat-block-2">
+                        <span class="left">"</span>
+                        <p>I wanna to be the best, to incoporate with the best team and to work in the best company!</p>
+                        <span class="right">"</span>
                     </div>
-                    <div id="intro-content">
-                        <h1 class="en">Vuong Do</h1>
-                        <div class="content flat-block-2">
-                            <h3 class="en"><span>I am</span> Web Developer</h3>
-                            <p>Welcome to my <span style="color: var(--color-5l-100)"><strong>personal website</strong></span>! To <strong>download</strong> my CV, please click the button below. Otherwise, you can <strong>explore</strong> all necessary information about me right here <i class="fi fi-rs-chevron-double-down"></i></p>
-                            <button>Download CV <i class="fi fi-rs-file-download"></i></button>
+                    <div id="my-feature">
+                        <div class="feature wrapper-half flat-block duo">
+                            <h2 class="count">5+</h2>
+                            <h4>Years experience in Web development</h4>
                         </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="resume">
-                <h2>Quick Resume</h2>
-                <div class="container">
-                    <div class="wrapper-half">
-                        <div id="my-objective" class="flat-block-2">
-                            <span class="left">"</span><p>I wanna to be the best, to incoporate with the best team and to work in the best company!</p><span class="right">"</span>
-                        </div>
-                        <div id="my-feature">
-                            <div class="feature wrapper-half flat-block">
-                                <h2 class="count">5+</h2>
-                                <h4>Years experience in Web development</h4>
-                            </div>
-                            <div class="feature wrapper-half flat-block-2">
-                                <h2 class="count">10+</h2>
-                                <h4>Large projects were released</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="my-info" class="wrapper-half flat-block">
-                        <ul id="info-list">
-                            <li><i class="fi fi-rs-cake-birthday"></i> Birthday<br><span>Feb 02, 2001</span></li>
-                            <li><i class="fi fi-rs-map-marker-home"></i> Address<br><span>Me Linh, Ha Noi</span></li>
-                            <li><i class="fi fi-rs-phone-call"></i> Phone<br><span>+84 383 398 867</span></li>
-                            <li><i class="fi fi-rs-envelope"></i> Email<br><span>Minhvuong25012001@gmail.com</span></li>
-                            <li><i class="fi fi-rs-globe"></i> Website<br><span>XoaiCC.id.vn</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="qualification">
-                <h2>Qualification of me</h2>
-                <div id="my-education" class="container path-line inner-section">
-                    <div class="path flat-block-2 path-first">
-                        <h3>Education path</h3>
-                    </div>
-                    <div class="path flat-block">
-                        <h5 class="highlight-title">JUN 2023 - NOW</h5>
-                        <div class="content">
-                            Study <span><h4>Full-Stack Engineer</h4></span> at <span><h4>Codecademy</h4></span><br>
-                            Achived: <span>
-                                <ul class="inline-list">
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="path flat-block-2">
-                        <h5 class="highlight-title-2">FEB 2023 - MAR 2023</h5>
-                        <div class="content">
-                            Study <span><h4>Java for Intern</h4></span> at <span><h4>FPT Software Academy</h4></span><br>
-                            Achived: <span>
-                                <ul class="inline-list">
-                                    <li class="odd">Java Basic</li>
-                                    <li class="even">SQL Basic</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="path flat-block">
-                        <h5 class="highlight-title">SEP 2019 - NOW</h5>
-                        <div class="content">
-                            Study <span><h4>Information Technology</h4></span> at <span><h4>Hanoi University</h4></span><br>
-                            Achived: <span>
-                                <ul class="inline-list">
-                                    <li class="odd">English B2</li>
-                                </ul>
-                            </span>
+                        <div class="feature wrapper-half flat-block-2 duo">
+                            <h2 class="count">10+</h2>
+                            <h4>Large projects were released</h4>
                         </div>
                     </div>
                 </div>
-                <div id="my-skill" class="container inner-section">
-                    <div class="wrapper-full container">
-                        <div id="productivity" class="wrapper-half flat-block">
-                            <h3 class="highlight-title">Evaluation of productivity</h3>
-                            <div id="office-tool" class="item-inner">
-                                <h4>Office tools</h4>
-                                <ul class="inline-list">
-                                    <li class="odd">Excel <span class="grade">B</span></li>
-                                    <li class="even">PowerPoint <span class="grade">C+</span></li>
-                                </ul>
-                            </div>
-                            <div id="development-tool" class="item-inner">
-                                <h4>Development tools</h4>
-                                <ul class="inline-list">
-                                    <li class="odd">VS Code <span class="grade">C+</span></li>
-                                    <li class="even">IntelliJ <span class="grade">B</span></li>
-                                    <li class="odd">Git & Github <span class="grade">C</span></li>
-                                    <li class="even">Postman <span class="grade">C</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="proficiency" class="wrapper-half flat-block">
-                            <h3 class="highlight-title">Evaluation of proficiency</h3>
-                            <div id="communication-language" class="item-inner">
-                                <h4>Communication language</h4>
-                                <ul class="inline-list">
-                                    <li class="odd">English <span class="grade">B2</span></li>
-                                </ul>
-                            </div>
-                            <div id="coding-language" class="item-inner">
-                                <h4>Coding language</h4>
-                                <ul class="inline-list">
-                                    <li class="odd">HTML <span class="grade">B+</span></li>
-                                    <li class="even">CSS/SCSS <span class="grade">B</span></li>
-                                    <li class="odd">JavaScript <span class="grade">B</span></li>
-                                    <li class="even">Java <span class="grade">B</span></li>
-                                    <li class="odd">SQL <span class="grade">C+</span></li>
-                                    <li class="even">Python <span class="grade">C+</span></li>
-                                    <li class="odd">PHP <span class="grade">D+</span></li>
-                                </ul>
-                            </div>
-                            <div id="framework-language" class="item-inner">
-                                <h4>Framework language</h4>
-                                <ul class="inline-list">
-                                    <li class="odd">Reactjs <span class="grade">C+</span></li>
-                                    <li class="even">Nodejs <span class="grade">C</span></li>
-                                    <li class="odd">MySQL <span class="grade">C</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div id="my-info" class="wrapper-half flat-block">
+                    <ul id="info-list">
+                        <li><i class="fi fi-rs-cake-birthday"></i> Birthday<br><span>Feb 02, 2001</span></li>
+                        <li><i class="fi fi-rs-map-marker-home"></i> Address<br><span>Me Linh, Ha Noi</span></li>
+                        <li><i class="fi fi-rs-phone-call"></i> Phone<br><span>+84 383 398 867</span></li>
+                        <li><i class="fi fi-rs-envelope"></i> Email<br><span>Minhvuong25012001@gmail.com</span></li>
+                        <li><i class="fi fi-rs-globe"></i> Website<br><span>XoaiCC.id.vn</span></li>
+                    </ul>
                 </div>
-                <div id="my-certification" class="inner-section">
-                    <h3>Certificate</h3>
-                    <div class="carousel" class="container">
-                        <div class="carousel-inner">
-                            <img class="odd" src="assets/images/certificates/english-b2-certificate.jpg" alt="Pic of the English certificate">
-                            <img class="even" src="assets/images/certificates/html-course-certificate.jpg" alt="Pic of the HTML certificate">
-                            <img class="odd" src="assets/images/certificates/css-course-certificate.jpg" alt="Pic of the CSS certificate">
-                            <img class="even" src="assets/images/certificates/javascript-course-certificate.jpg" alt="Pic of the JavaScript certificate">
-                        </div>
-                    </div>
-                </div>
-                <div id="my-reward" class="inner-section">
-                    <h3>Reward</h3>
-                    <div class="carousel" class="container">
-                        <div class="carousel-inner">
-                            <img>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="experience">
-                <h2>My Experience</h2>
-                <div id="my-career" class="container path-line">
-                    <div class="path flat-block-2 path-first">
-                        <h3>Career path</h3>
-                    </div>
-                    <div class="path flat-block">
-                        <h5 class="highlight-title">MAY 2023 - JUL 2023</h5>
-                        <div class="content">
-                            Be <span><h4>IT supervisor</h4></span> at <span><h4>SABECO Jsc</h4></span><br>
-                            Gained: <span>
-                                <ul>
-                                    <li>Knowledge about managing the data, arranging human and electronic devices.</li>
-                                    <li>Accomplish missons contentedly in a big company in the digital transformation progress.</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="path flat-block-2">
-                        <h5 class="highlight-title-2">AUG 2022 - OCT 2022</h5>
-                        <div class="content">
-                            Be <span><h4>Manual Tester</h4></span> at <span><h4>Test IO platform</h4></span><br>
-                            Gained: <span>
-                                <ul>
-                                    <li>Knowledge about a lot of errors of modern websites nowadays and way of error reporting.</li>
-                                    <li>Experience about testing in testcases.</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="path flat-block">
-                        <h5 class="highlight-title">SEP 2020 - NOW</h5>
-                        <div class="content">
-                            Be <span><h4>Webmaster</h4></span> at <span><h4>[...]</h4></span><br>
-                            Gained: <span>
-                                <ul>
-                                    <li>Knowledge about wide range of website types.</li>
-                                    <li>Experience about website management.</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="portfolio">
-                <h2>Feature Projects</h2>
-                <div class="wrapper-full" class="container">
-                    <div class="project flat-block">
-                        <h3 class="highlight-title">XoaiCV 2</h3>
-                        <h4>CV & portfolio website</h4>
-                        <div class="content">
-                            <strong>Description:</strong> A project to introduce myself version 2<br>
-                            <strong>Human:</strong> Individual<br>
-                            <strong>Technique:</strong>
-                            <span class="project-technique">
-                                <ul class="inline-list">
-                                    <li class="odd">HTML</li>
-                                    <li class="even">CSS</li>
-                                    <li class="odd">JS</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="button-link dash">
-                            <button><a href="/">Visit Web <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            <button><a href="https://github.com/xoaicc/xoaicv-2">Show Code <i class="fi fi-rs-cursor-finger"></i></a></button>
-                        </div>
-                    </div>
-                    <div class="project flat-block-2">
-                        <h3 class="highlight-title-2">Mangah</h3>
-                        <h4>Comic Reading website</h4>
-                        <div class="content">
-                            <strong>Description:</strong> An interesting non-profit project to my taste<br>
-                            <strong>Human:</strong> Individual<br>
-                            <strong>Technique:</strong>
-                            <span class="project-technique">
-                                <ul class="inline-list">
-                                    <li class="odd">HTML</li>
-                                    <li class="even">CSS/SCSS</li>
-                                    <li class="odd">Reactjs</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="button-link dash-2">
-                            <button><a href="https://magah.xoaicc.dev/">Visit Web <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            <button><a href="https://github.com/xoaicc/magah">Show Code <i class="fi fi-rs-cursor-finger"></i></a></button>
-                        </div>
-                    </div>
-                    <div class="project flat-block">
-                        <h3 class="highlight-title">XoaiCV</h3>
-                        <h4>CV & portfolio website</h4>
-                        <div class="content">
-                            <strong>Description:</strong> A project to introduce myself<br>
-                            <strong>Human:</strong> Individual<br>
-                            <strong>Technique:</strong>
-                            <span class="project-technique">
-                                <ul class="inline-list">
-                                    <li class="odd">HTML</li>
-                                    <li class="even">CSS</li>
-                                    <li class="odd">JS</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="button-link dash">
-                            <button><a href="https://v1.xoaicc.dev/">Visit Web <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            <button><a href="https://github.com/xoaicc/xoaicv">Show Code <i class="fi fi-rs-cursor-finger"></i></a></button>
-                        </div>
-                    </div>
-                    <div class="project flat-block-2">
-                        <h3 class="highlight-title-2">Cloud Store</h3>
-                        <h4>Electronic commerce website</h4>
-                        <div class="content">
-                            <strong>Description:</strong> A group project in the university<br>
-                            <strong>Human:</strong> 6 members<br>
-                            <strong>Technique:</strong>
-                            <span class="project-technique">
-                                <ul class="inline-list">
-                                    <li class="odd">HTML</li>
-                                    <li class="even">CSS</li>
-                                    <li class="odd">JS</li>
-                                    <li class="even">Spring Boot</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="button-link dash-2">
-                            <button><a href="https://youtu.be/bUvM1HgwV1Y">Watch Demo <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            <button><a href="https://github.com/HaDucTam/SE2Project">Show Code <i class="fi fi-rs-cursor-finger"></i></a></button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Get Contact</h2>
-                <div class="wrapper-full" class="container">
-                    <div id="contact-info" class="wrapper-half">
-                        <div id="chat-with-me" class="contact-box flat-block">
-                            <h3 class="highlight-title">Chat with me</h3>
-                            <p class="content">Chat platform is the best channel to converse with me</p>
-                            <div class="button-link">
-                                <button><a href="https://zalo.me/84383398867">Zalo <i class="fi fi-rs-cursor-finger"></i></a></button>
-                                <button><a href="https://m.me/vuong.xoaic">Messenger <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            </div>
-                        </div>
-                        <div id="call-to-me" class="contact-box flat-block-2">
-                            <h3 class="highlight-title-2">Call to me</h3>
-                            <p class="content">If you don't want to wait... but, please call me in the working time</p>
-                            <div class="button-link">
-                                <button><a href="tel:84383398867">+84383398867 <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            </div>
-                        </div>
-                        <div id="hire-me-in" class="contact-box flat-block-2">
-                            <h3 class="highlight-title-2">Hire me in</h3>
-                            <p class="content">A good way to know more about me before hiring</p>
-                            <div class="button-link">
-                                <button><a href="https://www.linkedin.com/in/vuong-xoaicc/">Linkedln <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            </div>
-                        </div>
-                        <div id="face-to-face" class="contact-box flat-block">
-                            <h3 class="highlight-title">Face to face</h3>
-                            <p class="content">Well, you are so serious when take this choice</p>
-                            <div class="button-link">
-                                <button><a href="https://goo.gl/maps/Tu7J376FYyiNbBEu7">Google Maps <i class="fi fi-rs-cursor-finger"></i></a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="contact-form" class="wrapper-half">
-                        <h3><i>or</i> Send me an email</h3>
-                        <form method="post" class="flat-block-2">
-                            <div id="name-input" class="form-group">
-                                <div class="form-half">
-                                    <label for="fname">First name:</label><br>
-                                    <input type="text" id="fname" name="firstname" required="true">
-                                </div>
-                                <div class="form-half">
-                                    <label for="lname">Last name:</label><br>
-                                    <input type="text" id="lname" name="lastname" required="true">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your email:</label><br>
-                                <input type="email" id="email" name="email" required="true">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject:</label><br>
-                                <input type="text" id="subject" name="subject" required="true">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message:</label><br>
-                                <textarea id="message" name="message" rows="4" placeholder="Enter message..."></textarea>
-                            </div>
-                            <br>
-                            <input type="submit" value="Send message">
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
-        <footer>
-            <p>©2023 XoaiCV by XoaiCC with love</p>
-        </footer>
-    </body>
+        <section id="qualification">
+            <h2>Qualification of me</h2>
+            <div id="my-education" class="container path-line inner-section">
+                <div class="path flat-block-2 path-first">
+                    <h3>Education path</h3>
+                </div>
+                <div class="path flat-block">
+                    <h5 class="highlight-title">JUN 2023 - NOW</h5>
+                    <div class="content">
+                        Study <span>
+                            <h4>Full-Stack Engineer</h4>
+                        </span> at <span>
+                            <h4>Codecademy</h4>
+                        </span><br>
+                        Achived: <span>
+                            <ul class="inline-list">
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="path flat-block-2">
+                    <h5 class="highlight-title-2">FEB 2023 - MAR 2023</h5>
+                    <div class="content">
+                        Study <span>
+                            <h4>Java for Intern</h4>
+                        </span> at <span>
+                            <h4>FPT Software Academy</h4>
+                        </span><br>
+                        Achived: <span>
+                            <ul class="inline-list">
+                                <li class="odd">Java Basic</li>
+                                <li class="even">SQL Basic</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="path flat-block">
+                    <h5 class="highlight-title">SEP 2019 - NOW</h5>
+                    <div class="content">
+                        Study <span>
+                            <h4>Information Technology</h4>
+                        </span> at <span>
+                            <h4>Hanoi University</h4>
+                        </span><br>
+                        Achived: <span>
+                            <ul class="inline-list">
+                                <li class="odd">English B2</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="my-skill" class="container inner-section">
+                <div class="wrapper-full container">
+                    <div id="productivity" class="wrapper-half flat-block">
+                        <h3 class="highlight-title">Evaluation of productivity</h3>
+                        <div id="office-tool" class="item-inner">
+                            <h4>Office tools</h4>
+                            <ul class="inline-list">
+                                <li class="odd">Excel <span class="grade">B</span></li>
+                                <li class="even">PowerPoint <span class="grade">C+</span></li>
+                            </ul>
+                        </div>
+                        <div id="development-tool" class="item-inner">
+                            <h4>Development tools</h4>
+                            <ul class="inline-list">
+                                <li class="odd">VS Code <span class="grade">C+</span></li>
+                                <li class="even">IntelliJ <span class="grade">B</span></li>
+                                <li class="odd">Git & Github <span class="grade">C</span></li>
+                                <li class="even">Postman <span class="grade">C</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="proficiency" class="wrapper-half flat-block">
+                        <h3 class="highlight-title">Evaluation of proficiency</h3>
+                        <div id="communication-language" class="item-inner">
+                            <h4>Communication language</h4>
+                            <ul class="inline-list">
+                                <li class="odd">English <span class="grade">B2</span></li>
+                            </ul>
+                        </div>
+                        <div id="coding-language" class="item-inner">
+                            <h4>Coding language</h4>
+                            <ul class="inline-list">
+                                <li class="odd">HTML <span class="grade">B+</span></li>
+                                <li class="even">CSS/SCSS <span class="grade">B</span></li>
+                                <li class="odd">JavaScript <span class="grade">B</span></li>
+                                <li class="even">Java <span class="grade">B</span></li>
+                                <li class="odd">SQL <span class="grade">C+</span></li>
+                                <li class="even">Python <span class="grade">C+</span></li>
+                                <li class="odd">PHP <span class="grade">D+</span></li>
+                            </ul>
+                        </div>
+                        <div id="framework-language" class="item-inner">
+                            <h4>Framework language</h4>
+                            <ul class="inline-list">
+                                <li class="odd">Reactjs <span class="grade">C+</span></li>
+                                <li class="even">Nodejs <span class="grade">C</span></li>
+                                <li class="odd">MySQL <span class="grade">C</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="my-certification" class="inner-section">
+                <h3>Certificate</h3>
+                <div class="carousel container">
+                    <div class="carousel-inner">
+                        <img class="odd" src="assets/images/certificates/english-b2-certificate.jpg"
+                            alt="Pic of the English certificate">
+                        <img class="even" src="assets/images/certificates/html-course-certificate.jpg"
+                            alt="Pic of the HTML certificate">
+                        <img class="odd" src="assets/images/certificates/css-course-certificate.jpg"
+                            alt="Pic of the CSS certificate">
+                        <img class="even" src="assets/images/certificates/javascript-course-certificate.jpg"
+                            alt="Pic of the JavaScript certificate">
+                    </div>
+                </div>
+            </div>
+            <div id="my-reward" class="inner-section">
+                <h3>Reward</h3>
+                <div class="carousel container">
+                    <div class="carousel-inner">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>My Experience</h2>
+            <div id="my-career" class="container path-line">
+                <div class="path flat-block-2 path-first">
+                    <h3>Career path</h3>
+                </div>
+                <div class="path flat-block">
+                    <h5 class="highlight-title">MAY 2023 - JUL 2023</h5>
+                    <div class="content">
+                        Be <span>
+                            <h4>IT supervisor</h4>
+                        </span> at <span>
+                            <h4>SABECO Jsc</h4>
+                        </span><br>
+                        Gained: <span>
+                            <ul>
+                                <li>Knowledge about managing the data, arranging human and electronic devices.</li>
+                                <li>Accomplish missons contentedly in a big company in the digital transformation
+                                    progress.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="path flat-block-2">
+                    <h5 class="highlight-title-2">AUG 2022 - OCT 2022</h5>
+                    <div class="content">
+                        Be <span>
+                            <h4>Manual Tester</h4>
+                        </span> at <span>
+                            <h4>Test IO platform</h4>
+                        </span><br>
+                        Gained: <span>
+                            <ul>
+                                <li>Knowledge about a lot of errors of modern websites nowadays and way of error
+                                    reporting.</li>
+                                <li>Experience about testing in testcases.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="path flat-block">
+                    <h5 class="highlight-title">SEP 2020 - NOW</h5>
+                    <div class="content">
+                        Be <span>
+                            <h4>Webmaster</h4>
+                        </span> at <span>
+                            <h4>[...]</h4>
+                        </span><br>
+                        Gained: <span>
+                            <ul>
+                                <li>Knowledge about wide range of website types.</li>
+                                <li>Experience about website management.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Feature Projects</h2>
+            <div class="wrapper-full container">
+                <div class="project flat-block">
+                    <h3 class="highlight-title">XoaiCV 2</h3>
+                    <h4>CV & portfolio website</h4>
+                    <div class="content">
+                        <strong>Description:</strong> A project to introduce myself version 2<br>
+                        <strong>Human:</strong> Individual<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">HTML</li>
+                                <li class="even">CSS</li>
+                                <li class="odd">JS</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="button-link dash">
+                        <button><a href="/">Visit Web <i class="fi fi-rs-cursor-finger"></i></a></button>
+                        <button><a href="https://github.com/xoaicc/xoaicv-2">Show Code <i
+                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                    </div>
+                </div>
+                <div class="project flat-block-2">
+                    <h3 class="highlight-title-2">Mangah</h3>
+                    <h4>Comic Reading website</h4>
+                    <div class="content">
+                        <strong>Description:</strong> An interesting non-profit project to my taste<br>
+                        <strong>Human:</strong> Individual<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">HTML</li>
+                                <li class="even">CSS/SCSS</li>
+                                <li class="odd">Reactjs</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="button-link dash-2">
+                        <button><a href="https://magah.xoaicc.dev/">Visit Web <i
+                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                        <button><a href="https://github.com/xoaicc/magah">Show Code <i
+                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                    </div>
+                </div>
+                <div class="project flat-block">
+                    <h3 class="highlight-title">XoaiCV</h3>
+                    <h4>CV & portfolio website</h4>
+                    <div class="content">
+                        <strong>Description:</strong> A project to introduce myself<br>
+                        <strong>Human:</strong> Individual<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">HTML</li>
+                                <li class="even">CSS</li>
+                                <li class="odd">JS</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="button-link dash">
+                        <button><a href="https://v1.xoaicc.dev/">Visit Web <i
+                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                        <button><a href="https://github.com/xoaicc/xoaicv">Show Code <i
+                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                    </div>
+                </div>
+                <div class="project flat-block-2">
+                    <h3 class="highlight-title-2">Cloud Store</h3>
+                    <h4>Electronic commerce website</h4>
+                    <div class="content">
+                        <strong>Description:</strong> A group project in the university<br>
+                        <strong>Human:</strong> 6 members<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">HTML</li>
+                                <li class="even">CSS</li>
+                                <li class="odd">JS</li>
+                                <li class="even">Spring Boot</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="button-link dash-2">
+                        <button><a href="https://youtu.be/bUvM1HgwV1Y">Watch Demo <i
+                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                        <button><a href="https://github.com/HaDucTam/SE2Project">Show Code <i
+                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Get Contact</h2>
+            <div class="wrapper-full container">
+                <div id="contact-info" class="wrapper-half">
+                    <div id="chat-with-me" class="contact-box flat-block duo">
+                        <h3 class="highlight-title">Chat with me</h3>
+                        <p class="content">Chat platform is the best channel to converse with me</p>
+                        <div class="button-link">
+                            <button><a href="https://zalo.me/84383398867">Zalo <i
+                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                            <button><a href="https://m.me/vuong.xoaic">Messenger <i
+                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                        </div>
+                    </div>
+                    <div id="call-to-me" class="contact-box flat-block-2 duo">
+                        <h3 class="highlight-title-2">Call to me</h3>
+                        <p class="content">If you don't want to wait... but, please call me in the working time</p>
+                        <div class="button-link">
+                            <button><a href="tel:84383398867">+84383398867 <i
+                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                        </div>
+                    </div>
+                    <div id="hire-me-in" class="contact-box flat-block-2 duo">
+                        <h3 class="highlight-title-2">Hire me in</h3>
+                        <p class="content">A good way to know more about me before hiring</p>
+                        <div class="button-link">
+                            <button><a href="https://www.linkedin.com/in/vuong-xoaicc/">Linkedln <i
+                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                        </div>
+                    </div>
+                    <div id="face-to-face" class="contact-box flat-block duo">
+                        <h3 class="highlight-title">Face to face</h3>
+                        <p class="content">Well, you are so serious when take this choice</p>
+                        <div class="button-link">
+                            <button><a href="https://goo.gl/maps/Tu7J376FYyiNbBEu7">Google Maps <i
+                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-form" class="wrapper-half">
+                    <h3><i>or</i> Send me an email</h3>
+                    <form method="post" class="flat-block-2">
+                        <div id="name-input" class="form-group">
+                            <div class="form-half">
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="firstname" required="true">
+                            </div>
+                            <div class="form-half">
+                                <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lastname" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your email:</label><br>
+                            <input type="email" id="email" name="email" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label><br>
+                            <input type="text" id="subject" name="subject" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4" placeholder="Enter message..."></textarea>
+                        </div>
+                        <br>
+                        <input type="submit" value="Send message">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        ©2023 XoaiCV by XoaiCC with love
+    </footer>
+</body>
 </html>
