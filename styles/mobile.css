@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1280px) {
+    header #menu {
+        display: none;
+    }
+
+    header #mobile {
+        display: block;
+    }
+
+    main #contact #contact-form {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    label {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .wrapper-half {
+        width: 100%;
+    }
+
+    .path {
+        width: 100%;
+    }
+
+    .flat-block+.flat-block-2:not(.duo),
+    .flat-block-2+.flat-block:not(.duo),
+    .flat-block+.flat-block,
+    .wrapper-half:not(.duo) {
+        margin-top: 20px;
+    }
+
+    main .inner-section {
+        margin-bottom: 15%;
+    }
+
+    main section {
+        padding: 5%;
+    }
+
+    main #intro div.container {
+        width: 100%;
+    }
+
+    main #intro #intro-content h1 {
+        top: 5%;
+        font-size: 14rem;
+    }
+
+    main #portfolio div.wrapper-full .project {
+        width: 100%;
+    }
+
+    main #contact #contact-info {
+        height: 600px;
+    }
+
+    main #contact #contact-form {
+        padding: 0;
+    }
+
+    main #contact #contact-form label {
+        display: initial;
+    }
+}

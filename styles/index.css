@@ -16,7 +16,17 @@
     --color-5l-50: rgba(166, 0, 0, 0.5);
 
     /* Color scheme in dark mode */
-    --color-0d-100: rgba(0, 0, 0, 1);
+    --color-0d-100: rgba(200, 200, 200, 1);
+    --color-1d-100: rgba(40, 66, 80, 1);
+    --color-1d-50: rgba(100, 136, 150, 0.5);
+    --color-2d-100: rgba(57, 107, 117, 1);
+    --color-2d-50: rgba(57, 107, 117, 0.5);
+    --color-3d-100: rgba(184, 182, 150, 1);
+    --color-3d-50: rgba(184, 182, 150, 0.5);
+    --color-4d-100: rgba(128, 93, 0, 1);
+    --color-4d-50: rgba(255, 221, 143, 0.5);
+    --color-5d-100: rgba(83, 0, 0, 1);
+    --color-5d-50: rgba(255, 102, 102, 0.5);
 }
 
 * {
@@ -25,10 +35,12 @@
     padding: 0;
 }
 
-html,
+body,
 button,
 select,
-option {
+option,
+input,
+textarea {
     font-size: 16px;
     font-family: 'JetBrains Mono', monospace;
     color: var(--color-1l-100);
@@ -110,6 +122,10 @@ input[type="submit"] {
     padding: 5px;
 }
 
+.flex {
+    display: flex;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -150,7 +166,7 @@ input[type="submit"] {
 }
 
 .path {
-    /* width: 24%; */
+    width: 24%;
     min-height: 200px;
 }
 
@@ -243,7 +259,7 @@ input[type="submit"] {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 body {
@@ -251,6 +267,10 @@ body {
     width: 100vw;
     position: relative;
     overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 span {
@@ -322,8 +342,43 @@ header #switcher #mode-switcher i::before {
     margin: auto;
 }
 
+header #mobile {
+    margin-left: 10px;
+    display: none;
+    position: relative;
+}
+
+header #mobile>i {
+    height: 100%;
+    font-size: 1.2rem;
+    border: 3px solid var(--color-2l-100);
+    cursor: pointer;
+}
+
+header #mobile #mobile-menu {
+    margin-left: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 60px;
+    right: -10px;
+    background-color: var(--color-3l-100);
+    border: 3px solid var(--color-2l-100);
+    box-shadow: -6px 6px 0 var(--color-1l-100);
+}
+
+header #mobile #mobile-menu a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 3px dashed var(--color-2l-100);
+}
+
 main section {
-    padding: 10%;
+    padding: 8%;
 }
 
 main section h2 {
@@ -384,6 +439,15 @@ main #resume #my-objective {
     padding-left: 10%;
     padding-right: 10%;
     text-align: justify;
+}
+
+main #resume #my-objective p {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+main #resume #my-objective p::-webkit-scrollbar {
+    display: none;
 }
 
 main #resume #my-objective span {
@@ -539,7 +603,8 @@ main #portfolio div.wrapper-full .project h4 {
 }
 
 main #portfolio div.wrapper-full .project div.content {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    overflow-y: auto;
 }
 
 main #contact {
@@ -554,7 +619,7 @@ main #contact #contact-info {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 400px;
+    height: 500px;
 }
 
 main #contact #contact-info .contact-box {
@@ -583,56 +648,4 @@ footer {
     width: 100vw;
     text-align: center;
     font-size: .7rem;
-}
-
-@media only screen and (max-width: 1280px) {
-    header #menu {
-        display: none;
-    }
-
-    main #contact #contact-form {
-        padding: 0 40px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    label {
-        display: none;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .wrapper-half {
-        width: 100%;
-    }
-
-    .path {
-        width: 100%;
-    }
-
-    .flat-block+.flat-block-2:not(.duo),
-    .flat-block-2+.flat-block:not(.duo),
-    .flat-block+.flat-block,
-    .wrapper-half:not(.duo) {
-        margin-top: 20px;
-    }
-
-    main #intro div.container {
-        width: 100%;
-    }
-
-    main #intro #intro-content h1 {
-        top: 5%;
-        font-size: 14rem;
-    }
-
-    main #portfolio div.wrapper-full .project {
-        width: 100%;
-    }
-
-    main #contact #contact-info {
-        height: 600px;
-    }
 }

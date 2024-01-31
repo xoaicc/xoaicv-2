@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XoaiCV - My CV &amp; porfolio</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/darkMode.css">
     <link rel="icon" href="assets/images/xoaicc-logo.png">
 </head>
 <body>
@@ -12,27 +14,57 @@
         <div id="name"><a href="/">XoaiCV</a></div>
 
         <nav id="menu">
-            <a href="#intro">Top <i class="fi fi-rs-arrow-up-to-dotted-line"></i></a>
-            <a href="#resume">Resume</a>
-            <a href="#qualification">Qualification</a>
-            <a href="#experience">Experience</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a class="smooth-scroll en" href="#intro">Top <i class="fi fi-rs-arrow-up-to-dotted-line"></i></a>
+            <a class="smooth-scroll en" href="#resume">Resume</a>
+            <a class="smooth-scroll en" href="#qualification">Qualification</a>
+            <a class="smooth-scroll en" href="#experience">Experience</a>
+            <a class="smooth-scroll en" href="#portfolio">Portfolio</a>
+            <a class="smooth-scroll en" href="#contact">Contact</a>
+            <a class="smooth-scroll vi hidden" href="#intro">Đầu trang <i
+                    class="fi fi-rs-arrow-up-to-dotted-line"></i></a>
+            <a class="smooth-scroll vi hidden" href="#resume">Sơ yếu</a>
+            <a class="smooth-scroll vi hidden" href="#qualification">Trình độ</a>
+            <a class="smooth-scroll vi hidden" href="#experience">Kinh nghiệm</a>
+            <a class="smooth-scroll vi hidden" href="#portfolio">Dự án</a>
+            <a class="smooth-scroll vi hidden" href="#contact">Liên hệ</a>
         </nav>
 
-        <div id="switcher">
-            <div id="lang-switcher" class="switcher-inner">
-                <label for="language">Language:</label>
+        <div class="flex">
+            <div id="switcher">
+                <div id="lang-switcher" class="switcher-inner">
+                    <label for="language" class="en">Language:</label>
+                    <label for="language" class="vi hidden">Ngôn ngữ:</label>
 
-                <select name="language" id="language" onchange=" this.dataset.chosen = this.value; ">
-                    <option value="english">English</option>
-                    <option value="vietnamese">Vietnamese</option>
-                </select>
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="vi">Tiếng Việt</option>
+                    </select>
+                </div>
+
+                <div id="mode-switcher" class="switcher-inner">
+                    <i class="fi fi-rs-cloud-sun hidden"></i>
+                    <i class="fi fi-rs-moon-stars"></i>
+                </div>
             </div>
 
-            <div id="mode-switcher" class="switcher-inner">
-                <i class="fi fi-rs-cloud-sun hidden"></i>
-                <i class="fi fi-rs-moon-stars"></i>
+            <div id="mobile">
+                <i id="mobile-btn" class="fi fi-rs-menu-dots-vertical"></i>
+
+                <nav id="mobile-menu" class="hidden">
+                    <a class="smooth-scroll en" href="#intro">Top <i class="fi fi-rs-arrow-up-to-dotted-line"></i></a>
+                    <a class="smooth-scroll en" href="#resume">Resume</a>
+                    <a class="smooth-scroll en" href="#qualification">Qualification</a>
+                    <a class="smooth-scroll en" href="#experience">Experience</a>
+                    <a class="smooth-scroll en" href="#portfolio">Portfolio</a>
+                    <a class="smooth-scroll en" href="#contact">Contact</a>
+                    <a class="smooth-scroll vi hidden" href="#intro">Đầu trang <i
+                            class="fi fi-rs-arrow-up-to-dotted-line"></i></a>
+                    <a class="smooth-scroll vi hidden" href="#resume">Sơ yếu</a>
+                    <a class="smooth-scroll vi hidden" href="#qualification">Trình độ</a>
+                    <a class="smooth-scroll vi hidden" href="#experience">Kinh nghiệm</a>
+                    <a class="smooth-scroll vi hidden" href="#portfolio">Dự án</a>
+                    <a class="smooth-scroll vi hidden" href="#contact">Liên hệ</a>
+                </nav>
             </div>
         </div>
     </header>
@@ -43,74 +75,125 @@
                 <div id="intro-logo">
                 </div>
                 <div id="intro-content">
-                    <h1>Vuong Do</h1>
+                    <h1 class="en">Vuong Do</h1>
+                    <h1 class="vi hidden">Vương Đỗ</h1>
                     <div class="content flat-block-2">
-                        <h3><span>I am</span> Web Developer</h3>
-                        <p>Welcome to my <span style="color: var(--color-5l-100)"><strong>personal
+                        <h3 class="en"><span>I am</span> Web Developer</h3>
+                        <h3 class="vi hidden"><span>Tôi là</span> Nhà phát triển Web</h3>
+                        <p class="en">Welcome to my <span style="color: var(--color-5l-100)"><strong>personal
                                     website</strong></span>! To <strong>explore</strong> all necessary information about
-                            me, let's scroll down. Otherwise, you can <strong>download</strong> my CV right here <i
-                                class="fi fi-rs-chevron-double-down"></i></p>
-                        <button>Download CV <i class="fi fi-rs-file-download"></i></button>
+                            me, let's scroll down. Otherwise, you can <strong>download</strong> my CV right here
+                            <br /><a class="smooth-scroll" href="/#resume"><i
+                                    class="fi fi-rs-chevron-double-down"></i></a>
+                        </p>
+                        <p class="vi hidden">Chào mừng tới <span style="color: var(--color-5l-100);"><strong>trang web
+                                    cá nhân</strong></span> của tôi! Để <strong>khám phá</strong> những điều cơ bản về
+                            tôi,
+                            hãy kéo xuống. Hoặc, bạn có thể <strong>tải ngay</strong> hồ sơ đầy đủ của tôi tại đây
+                            <br /><a class="smooth-scroll" href="/#resume"><i class="fi fi-rs-chevron-double-down"
+                                    style="color: var(--color-5l-100)"></i></a>
+                        </p>
+                        <a
+                            href="https://www.topcv.vn/download-cv?cv_id=BgBVAFAOUAAKUwwBCQUABQsHXQVTAFFRBloBUw5fc3&dontcount=1">
+                            <button class="en">Download CV <i class="fi fi-rs-file-download"></i></button>
+                            <button class="vi hidden">Tải xuống CV <i class="fi fi-rs-file-download"></i></button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="resume">
-            <h2>Quick Resume</h2>
+            <h2 class="en">Quick Resume</h2>
+            <h2 class="vi hidden">Sơ yếu lý lịch</h2>
             <div class="container">
                 <div class="wrapper-half">
                     <div id="my-objective" class="flat-block-2">
                         <span class="left">"</span>
-                        <p>I wanna to be the best, to incoporate with the best team and to work in the best company!</p>
+                        <p class="en">I need to look forward to something. Give me an ideal, I will go with you to the
+                            end. Or with me, I give you your ideals
+                            and ideas.</p>
+                        <p class="vi hidden">Tớ cần hướng đến một điều gì đó. Hãy cho tớ một lý tưởng, tớ sẽ đi cùng bạn
+                            đến cùng. Hoặc là cùng tớ, tớ sẽ cho bạn
+                            lý tưởng và ý tưởng của tớ.</p>
                         <span class="right">"</span>
                     </div>
                     <div id="my-feature">
                         <div class="feature wrapper-half flat-block duo">
-                            <h2 class="count">5+</h2>
-                            <h4>Years experience in Web development</h4>
+                            <h2 class="count">1+</h2>
+                            <h4 class="en">Years experience in Web development</h4>
+                            <h4 class="vi hidden">Năm kinh nghiệm trong phát triển Web</h4>
                         </div>
                         <div class="feature wrapper-half flat-block-2 duo">
                             <h2 class="count">10+</h2>
-                            <h4>Large projects were released</h4>
+                            <h4 class="en">Small and large projects were released</h4>
+                            <h4 class="vi hidden">Dự án lớn nhỏ đã phát hành</h4>
                         </div>
                     </div>
                 </div>
                 <div id="my-info" class="wrapper-half flat-block">
                     <ul id="info-list">
-                        <li><i class="fi fi-rs-cake-birthday"></i> Birthday<br><span>Feb 02, 2001</span></li>
-                        <li><i class="fi fi-rs-map-marker-home"></i> Address<br><span>Me Linh, Ha Noi</span></li>
-                        <li><i class="fi fi-rs-phone-call"></i> Phone<br><span>+84 383 398 867</span></li>
-                        <li><i class="fi fi-rs-envelope"></i> Email<br><span>Minhvuong25012001@gmail.com</span></li>
-                        <li><i class="fi fi-rs-globe"></i> Website<br><span>XoaiCC.id.vn</span></li>
+                        <li class="en"><i class="fi fi-rs-cake-birthday"></i> Birthday<br><span>Feb 02, 2001</span></li>
+                        <li class="en"><i class="fi fi-rs-map-marker-home"></i> Address<br><span>Me Linh, Ha Noi</span>
+                        </li>
+                        <li class="en"><i class="fi fi-rs-phone-call"></i> Phone<br><span>+84 383 398 867</span></li>
+                        <li class="en"><i class="fi fi-rs-envelope"></i>
+                            Email<br><span>Minhvuong25012001@gmail.com</span></li>
+                        <li class="en"><i class="fi fi-rs-globe"></i> Website<br><span>XoaiCC.id.vn</span></li>
+                        <li class="vi hidden"><i class="fi fi-rs-cake-birthday"></i> Sinh nhật<br><span>Mùng 2 tháng 2
+                                năm 2001</span></li>
+                        <li class="vi hidden"><i class="fi fi-rs-map-marker-home"></i> Địa chỉ<br><span>Mê Linh, TP. Hà
+                                Nội</span></li>
+                        <li class="vi hidden"><i class="fi fi-rs-phone-call"></i> Điện thoại<br><span>+84 383 398
+                                867</span></li>
+                        <li class="vi hidden"><i class="fi fi-rs-envelope"></i> Thư điện
+                            tử<br><span>Minhvuong25012001@gmail.com</span></li>
+                        <li class="vi hidden"><i class="fi fi-rs-globe"></i> Trang web<br><span>XoaiCC.id.vn</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="qualification">
-            <h2>Qualification of me</h2>
+            <h2 class="en">Qualification of me</h2>
+            <h2 class="vi hidden">Trình độ chuyên môn</h2>
             <div id="my-education" class="container path-line inner-section">
                 <div class="path flat-block-2 path-first">
-                    <h3>Education path</h3>
+                    <h3 class="en">Education path</h3>
+                    <h3 class="vi hidden">Con đường giáo dục</h3>
                 </div>
                 <div class="path flat-block">
-                    <h5 class="highlight-title">JUN 2023 - NOW</h5>
-                    <div class="content">
+                    <h5 class="highlight-title en">JUN 2023 - NOW</h5>
+                    <h5 class="highlight-title vi hidden">T6 2023 - Hiện tại</h5>
+                    <div class="content en">
                         Study <span>
-                            <h4>Full-Stack Engineer</h4>
+                            <h4>Web Development</h4>
                         </span> at <span>
                             <h4>Codecademy</h4>
                         </span><br>
                         Achived: <span>
                             <ul class="inline-list">
+                                <li class="odd">FE Engineer</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="content vi hidden">
+                        Học <span>
+                            <h4>Phát triển Web</h4>
+                        </span> tại <span>
+                            <h4>Codecademy</h4>
+                        </span><br>
+                        Đã đạt: <span>
+                            <ul class="inline-list">
+                                <li class="odd">Kỹ sư FE</li>
                             </ul>
                         </span>
                     </div>
                 </div>
                 <div class="path flat-block-2">
-                    <h5 class="highlight-title-2">FEB 2023 - MAR 2023</h5>
-                    <div class="content">
+                    <h5 class="highlight-title-2 en">FEB 2023 - MAR 2023</h5>
+                    <h5 class="highlight-title-2 vi hidden">T2 2023 - T3 2023</h5>
+                    <div class="content en">
                         Study <span>
                             <h4>Java for Intern</h4>
                         </span> at <span>
@@ -123,10 +206,24 @@
                             </ul>
                         </span>
                     </div>
+                    <div class="content vi hidden">
+                        Học <span>
+                            <h4>Java cho Intern</h4>
+                        </span> tại <span>
+                            <h4>FPT Software Academy</h4>
+                        </span><br>
+                        Đã đạt: <span>
+                            <ul class="inline-list">
+                                <li class="odd">Java cơ bản</li>
+                                <li class="even">SQL cơ bản</li>
+                            </ul>
+                        </span>
+                    </div>
                 </div>
                 <div class="path flat-block">
-                    <h5 class="highlight-title">SEP 2019 - NOW</h5>
-                    <div class="content">
+                    <h5 class="highlight-title en">SEP 2019 - NOV 2023</h5>
+                    <h5 class="highlight-title vi hidden">T9 2019 - T11 2023</h5>
+                    <div class="content en">
                         Study <span>
                             <h4>Information Technology</h4>
                         </span> at <span>
@@ -135,6 +232,20 @@
                         Achived: <span>
                             <ul class="inline-list">
                                 <li class="odd">English B2</li>
+                                <li class="even">Bachelor of IT</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="content vi hidden">
+                        Học <span>
+                            <h4>Công nghệ thông tin</h4>
+                        </span> tại <span>
+                            <h4>Đại học Hà Nội</h4>
+                        </span><br>
+                        Đã đạt: <span>
+                            <ul class="inline-list">
+                                <li class="odd">Tiếng Anh B2</li>
+                                <li class="even">Cử nhân CNTT</li>
                             </ul>
                         </span>
                     </div>
@@ -143,16 +254,20 @@
             <div id="my-skill" class="container inner-section">
                 <div class="wrapper-full container">
                     <div id="productivity" class="wrapper-half flat-block">
-                        <h3 class="highlight-title">Evaluation of productivity</h3>
+                        <h3 class="highlight-title en">Proficient in tools</h3>
+                        <h3 class="highlight-title vi hidden">Thành thạo công cụ</h3>
                         <div id="office-tool" class="item-inner">
-                            <h4>Office tools</h4>
+                            <h4 class="en">Office tools</h4>
+                            <h4 class="vi hidden">Công cụ văn phòng</h4>
                             <ul class="inline-list">
-                                <li class="odd">Excel <span class="grade">B</span></li>
-                                <li class="even">PowerPoint <span class="grade">C+</span></li>
+                                <li class="odd">Word <span class="grade">B</span></li>
+                                <li class="even">Excel <span class="grade">B</span></li>
+                                <li class="odd">PowerPoint <span class="grade">C+</span></li>
                             </ul>
                         </div>
                         <div id="development-tool" class="item-inner">
-                            <h4>Development tools</h4>
+                            <h4 class="en">Development tools</h4>
+                            <h4 class="vi hidden">Công cụ phát triển</h4>
                             <ul class="inline-list">
                                 <li class="odd">VS Code <span class="grade">C+</span></li>
                                 <li class="even">IntelliJ <span class="grade">B</span></li>
@@ -160,40 +275,69 @@
                                 <li class="even">Postman <span class="grade">C</span></li>
                             </ul>
                         </div>
-                    </div>
-                    <div id="proficiency" class="wrapper-half flat-block">
-                        <h3 class="highlight-title">Evaluation of proficiency</h3>
-                        <div id="communication-language" class="item-inner">
-                            <h4>Communication language</h4>
+                        <div id="designing-tool" class="item-inner">
+                            <h4 class="en">Designing tools</h4>
+                            <h4 class="vi hidden">Công cụ thiết kế</h4>
                             <ul class="inline-list">
-                                <li class="odd">English <span class="grade">B2</span></li>
+                                <li class="odd">Canva <span class="grade">B</span></li>
+                            </ul>
+                        </div>
+                        <div id="editing-tool" class="item-inner">
+                            <h4 class="en">Editing tools</h4>
+                            <h4 class="vi hidden">Công cụ chỉnh sửa</h4>
+                            <ul class="inline-list">
+                                <li class="odd">Sony Vegas <span class="grade">B</span></li>
+                                <li class="even">Adobe Photoshop <span class="grade">C+</span></li>
+                                <li class="odd">Adobe Premiere <span class="grade">C+</span></li>
+                                <li class="even">Adobe After Effects <span class="grade">C+</span></li>
+                            </ul>
+                        </div>
+                        <div id="other-tool" class="item-inner">
+                            <h4 class="en">Other tools</h4>
+                            <h4 class="vi hidden">Công cụ khác</h4>
+                            <ul class="inline-list">
+                                <li class="odd">ChatGBT <span class="grade">B+</span></li>
+                                <li class="even">DBeaver <span class="grade">C+</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="proficiency" class="wrapper-half flat-block-2">
+                        <h3 class="highlight-title-2 en">Fluency in languages</h3>
+                        <h3 class="highlight-title-2 vi hidden">Thông thạo ngôn ngữ</h3>
+                        <div id="communication-language" class="item-inner">
+                            <h4 class="en">Communication language</h4>
+                            <h4 class="vi hidden">Ngôn ngữ giao tiếp</h4>
+                            <ul class="inline-list">
+                                <li class="odd en">English <span class="grade">B2</span></li>
+                                <li class="odd vi hidden">Tiếng Anh <span class="grade">B2</span></li>
                             </ul>
                         </div>
                         <div id="coding-language" class="item-inner">
-                            <h4>Coding language</h4>
+                            <h4 class="en">Coding language</h4>
+                            <h4 class="vi hidden">Ngôn ngữ lập trình</h4>
                             <ul class="inline-list">
-                                <li class="odd">HTML <span class="grade">B+</span></li>
-                                <li class="even">CSS/SCSS <span class="grade">B</span></li>
                                 <li class="odd">JavaScript <span class="grade">B</span></li>
                                 <li class="even">Java <span class="grade">B</span></li>
-                                <li class="odd">SQL <span class="grade">C+</span></li>
+                                <li class="odd">TypeScript <span class="grade">C+</span></li>
                                 <li class="even">Python <span class="grade">C+</span></li>
                                 <li class="odd">PHP <span class="grade">D+</span></li>
                             </ul>
                         </div>
                         <div id="framework-language" class="item-inner">
-                            <h4>Framework language</h4>
+                            <h4 class="en">Framework language</h4>
+                            <h4 class="vi hidden">Hiểu biết Framework</h4>
                             <ul class="inline-list">
-                                <li class="odd">Reactjs <span class="grade">C+</span></li>
-                                <li class="even">Nodejs <span class="grade">C</span></li>
-                                <li class="odd">MySQL <span class="grade">C</span></li>
+                                <li class="odd">Reactjs <span class="grade">B</span></li>
+                                <li class="even">Nextjs <span class="grade">B</span></li>
+                                <li class="odd">Expressjs <span class="grade">C</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="my-certification" class="inner-section">
-                <h3>Certificate</h3>
+                <h3 class="en">Certificate</h3>
+                <h3 class="vi hidden">Chứng chỉ</h3>
                 <div class="carousel container">
                     <div class="carousel-inner">
                         <img class="odd" src="assets/images/certificates/english-b2-certificate.jpg"
@@ -208,7 +352,8 @@
                 </div>
             </div>
             <div id="my-reward" class="inner-section">
-                <h3>Reward</h3>
+                <h3 class="en">Reward</h3>
+                <h3 class="vi hidden">Giải thưởng</h3>
                 <div class="carousel container">
                     <div class="carousel-inner">
                     </div>
@@ -217,14 +362,17 @@
         </section>
 
         <section id="experience">
-            <h2>My Experience</h2>
-            <div id="my-career" class="container path-line">
+            <h2 class="en">My Experience</h2>
+            <h2 class="vi hidden">Trải nghiệm của tôi</h2>
+            <div id="my-career" class="container path-line inner-section">
                 <div class="path flat-block-2 path-first">
-                    <h3>Career path</h3>
+                    <h3 class="en">Career path</h3>
+                    <h3 class="vi hidden">Con đường sự nghiệp</h3>
                 </div>
                 <div class="path flat-block">
-                    <h5 class="highlight-title">MAY 2023 - JUL 2023</h5>
-                    <div class="content">
+                    <h5 class="highlight-title en">MAY 2023 - JUL 2023</h5>
+                    <h5 class="highlight-title vi hidden">T5 2023 - T7 2023</h5>
+                    <div class="content en">
                         Be <span>
                             <h4>IT supervisor</h4>
                         </span> at <span>
@@ -238,10 +386,25 @@
                             </ul>
                         </span>
                     </div>
+                    <div class="content vi hidden">
+                        Làm <span>
+                            <h4 class="en">IT supervisor</h4>
+                            <h4 class="vi hidden">Giám sát IT</h4>
+                        </span> tại <span>
+                            <h4>SABECO Jsc</h4>
+                        </span><br>
+                        Học được: <span>
+                            <ul>
+                                <li>Hiểu về quản lý dữ liệu, tài sản và dữ liệu nhân viên.</li>
+                                <li>Tham gia vào quá trình chuyển đổi số lớn của công ty.</li>
+                            </ul>
+                        </span>
+                    </div>
                 </div>
                 <div class="path flat-block-2">
-                    <h5 class="highlight-title-2">AUG 2022 - OCT 2022</h5>
-                    <div class="content">
+                    <h5 class="highlight-title-2 en">AUG 2022 - OCT 2022</h5>
+                    <h5 class="highlight-title-2 vi hidden">T8 2022 - T10 2022</h5>
+                    <div class="content en">
                         Be <span>
                             <h4>Manual Tester</h4>
                         </span> at <span>
@@ -255,10 +418,25 @@
                             </ul>
                         </span>
                     </div>
+                    <div class="content vi hidden">
+                        Làm <span>
+                            <h4 class="en">Manual Tester</h4>
+                            <h4 class="vi hidden">Kiểm thử thủ công</h4>
+                        </span> tại <span>
+                            <h4>Test IO platform</h4>
+                        </span><br>
+                        Học được: <span>
+                            <ul>
+                                <li>Hiểu về các lỗi trên website ngày nay và quá trình báo cáo lỗi.</li>
+                                <li>Trải nghiệm việc kiểm thử trong các testcases vừa và nhỏ.</li>
+                            </ul>
+                        </span>
+                    </div>
                 </div>
                 <div class="path flat-block">
-                    <h5 class="highlight-title">SEP 2020 - NOW</h5>
-                    <div class="content">
+                    <h5 class="highlight-title en">SEP 2020 - NOW</h5>
+                    <h5 class="highlight-title vi hidden">T9 2020 - Hiện tại</h5>
+                    <div class="content en">
                         Be <span>
                             <h4>Webmaster</h4>
                         </span> at <span>
@@ -271,40 +449,138 @@
                             </ul>
                         </span>
                     </div>
+                    <div class="content vi hidden">
+                        Làm <span>
+                            <h4 class="en">Webmaster</h4>
+                            <h4 class="vi hidden">Quản trị web</h4>
+                        </span> tại <span>
+                            <h4>[...]</h4>
+                        </span><br>
+                        Học được: <span>
+                            <ul>
+                                <li>Hiểu về các loại trang web, mô hình web.</li>
+                                <li>Trải nghiệm quản lý các trang web vừa và nhỏ.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="my-desired-job" class="inner-section">
+                <h3 class="en">Desired Job</h3>
+                <h3 class="vi hidden">Vị trí mong muốn</h3>
+                <div class="container">
+                    <ul class="inline-list en">
+                        <li class="odd">Web Full-Stack Engineer</li>
+                        <li class="even">Security Engineer</li>
+                        <li class="odd">IT Technician / IT Helpdesk</li>
+                    </ul>
+                    <ul class="inline-list vi hidden">
+                        <li class="odd">Lập trình viên web toàn diện</li>
+                        <li class="even">Chuyên viên an toàn bảo mật hệ thống CNTT</li>
+                        <li class="odd">Chuyên viên IT</li>
+                    </ul>
                 </div>
             </div>
         </section>
         <section id="portfolio">
-            <h2>Feature Projects</h2>
+            <h2 class="en">Feature Projects</h2>
+            <h2 class="vi hidden">Dự án tiêu biểu</h2>
             <div class="wrapper-full container">
                 <div class="project flat-block">
-                    <h3 class="highlight-title">XoaiCV 2</h3>
-                    <h4>CV & portfolio website</h4>
-                    <div class="content">
-                        <strong>Description:</strong> A project to introduce myself version 2<br>
-                        <strong>Human:</strong> Individual<br>
+                    <h3 class="highlight-title">Shop Acc</h3>
+                    <h4 class="en">E-commerce website</h4>
+                    <h4 class="vi hidden">Trang web bán hàng</h4>
+                    <div class="content en">
+                        <strong>Description:</strong> A e-commerce website to sold nickgames, built on modern style<br>
+                        <strong>Role:</strong> FS developer<br>
                         <strong>Technique:</strong>
                         <span class="project-technique">
                             <ul class="inline-list">
-                                <li class="odd">HTML</li>
-                                <li class="even">CSS</li>
-                                <li class="odd">JS</li>
+                                <li class="odd">TS</li>
+                                <li class="even">Nextjs</li>
+                                <li class="odd">Tailwind</li>
+                                <li class="even">Nodejs</li>
+                                <li class="odd">Expressjs</li>
+                                <li class="even">MySQL</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="content vi hidden">
+                        <strong>Mô tả:</strong> Một dự án phát triển trang web bán tài khoản game<br>
+                        <strong>Vai trò:</strong> Phát triển toàn diện<br>
+                        <strong>Kỹ thuật:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">TS</li>
+                                <li class="even">Nextjs</li>
+                                <li class="odd">Tailwind</li>
+                                <li class="even">Nodejs</li>
+                                <li class="odd">Expressjs</li>
+                                <li class="even">MySQL</li>
                             </ul>
                         </span>
                     </div>
                     <div class="button-link dash">
-                        <button><a href="/">Visit Web <i class="fi fi-rs-cursor-finger"></i></a></button>
-                        <button><a href="https://github.com/xoaicc/xoaicv-2">Show Code <i
-                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                        <button><a href="https://dev.tyzuu.com/">Demo</a></button>
                     </div>
                 </div>
                 <div class="project flat-block-2">
-                    <h3 class="highlight-title-2">Mangah</h3>
-                    <h4>Comic Reading website</h4>
-                    <div class="content">
-                        <strong>Description:</strong> An interesting non-profit project to my taste<br>
-                        <strong>Human:</strong> Individual<br>
+                    <h3 class="highlight-title-2">Karate HANU</h3>
+                    <h4 class="en">Club website</h4>
+                    <h4 class="vi hidden">Trang web câu lạc bộ</h4>
+                    <div class="content en">
+                        <strong>Description:</strong> A non-profit project for my favourite club<br>
+                        <strong>Role:</strong> FE developer<br>
                         <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">HTML</li>
+                                <li class="even">CSS/SCSS</li>
+                                <li class="odd">JS</li>
+                                <li class="even">Reactjs</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="content vi hidden">
+                        <strong>Mô tả:</strong> Một dự án dành cho câu lạc bộ yêu thích của tôi<br>
+                        <strong>Vai trò:</strong> Phát triển giao diện<br>
+                        <strong>Kỹ thuật:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">HTML</li>
+                                <li class="even">CSS/SCSS</li>
+                                <li class="odd">JS</li>
+                                <li class="even">Reactjs</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="button-link dash-2">
+                        <button><a href="https://karatehanu.club">Demo</a></button>
+                        <button><a href="https://github.com/xoaicc/karate-hanu-club">Code</a></button>
+                    </div>
+                </div>
+                <div class="project flat-block">
+                    <h3 class="highlight-title">Mangah</h3>
+                    <h4 class="en">Comic Reading website</h4>
+                    <h4 class="vi hidden">Trang web đọc truyện tranh</h4>
+                    <div class="content en">
+                        <strong>Description:</strong> An interesting non-profit project to my taste<br>
+                        <strong>Role:</strong> FE developer<br>
+                        <strong>Technique:</strong>
+                        <span class="project-technique">
+                            <ul class="inline-list">
+                                <li class="odd">HTML</li>
+                                <li class="even">CSS/SCSS</li>
+                                <li class="odd">Js</li>
+                                <li class="even">Reactjs</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="content vi hidden">
+                        <strong>Mô tả:</strong> Một dự án phi lợi nhuận phát triển trang web cho người đọc truyện
+                        tranh<br>
+                        <strong>Vai trò:</strong> Phát triển giao diện<br>
+                        <strong>Kỹ thuật:</strong>
                         <span class="project-technique">
                             <ul class="inline-list">
                                 <li class="odd">HTML</li>
@@ -313,42 +589,33 @@
                             </ul>
                         </span>
                     </div>
-                    <div class="button-link dash-2">
-                        <button><a href="https://magah.xoaicc.dev/">Visit Web <i
-                                    class="fi fi-rs-cursor-finger"></i></a></button>
-                        <button><a href="https://github.com/xoaicc/magah">Show Code <i
-                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                    <div class="button-link dash">
+                        <button><a href="https://magah.xoaicc.dev/">Demo</a></button>
+                        <button><a href="https://github.com/xoaicc/magah">Code</a></button>
                     </div>
                 </div>
-                <div class="project flat-block">
-                    <h3 class="highlight-title">XoaiCV</h3>
-                    <h4>CV & portfolio website</h4>
-                    <div class="content">
-                        <strong>Description:</strong> A project to introduce myself<br>
-                        <strong>Human:</strong> Individual<br>
+                <div class="project flat-block-2">
+                    <h3 class="highlight-title-2">Cloud Store</h3>
+                    <h4 class="en">E-commerce website</h4>
+                    <h4 class="vi hidden">Trang web bán hàng</h4>
+                    <div class="content en">
+                        <strong>Description:</strong> A group project in the university<br>
+                        <strong>Role:</strong> FE developer<br>
                         <strong>Technique:</strong>
                         <span class="project-technique">
                             <ul class="inline-list">
                                 <li class="odd">HTML</li>
                                 <li class="even">CSS</li>
                                 <li class="odd">JS</li>
+                                <li class="even">Java</li>
+                                <li class="odd">Spring Boot</li>
                             </ul>
                         </span>
                     </div>
-                    <div class="button-link dash">
-                        <button><a href="https://v1.xoaicc.dev/">Visit Web <i
-                                    class="fi fi-rs-cursor-finger"></i></a></button>
-                        <button><a href="https://github.com/xoaicc/xoaicv">Show Code <i
-                                    class="fi fi-rs-cursor-finger"></i></a></button>
-                    </div>
-                </div>
-                <div class="project flat-block-2">
-                    <h3 class="highlight-title-2">Cloud Store</h3>
-                    <h4>Electronic commerce website</h4>
-                    <div class="content">
-                        <strong>Description:</strong> A group project in the university<br>
-                        <strong>Human:</strong> 6 members<br>
-                        <strong>Technique:</strong>
+                    <div class="content vi hidden">
+                        <strong>Mô tả:</strong> Một dự án trên trường đại học<br>
+                        <strong>Vai trò:</strong> Phát triển giao diện<br>
+                        <strong>Kỹ thuật:</strong>
                         <span class="project-technique">
                             <ul class="inline-list">
                                 <li class="odd">HTML</li>
@@ -359,80 +626,100 @@
                         </span>
                     </div>
                     <div class="button-link dash-2">
-                        <button><a href="https://youtu.be/bUvM1HgwV1Y">Watch Demo <i
-                                    class="fi fi-rs-cursor-finger"></i></a></button>
-                        <button><a href="https://github.com/HaDucTam/SE2Project">Show Code <i
-                                    class="fi fi-rs-cursor-finger"></i></a></button>
+                        <button><a href="https://youtu.be/bUvM1HgwV1Y">Demo</a></button>
+                        <button><a href="https://github.com/HaDucTam/SE2Project">Code</a></button>
                     </div>
                 </div>
             </div>
         </section>
         <section id="contact">
-            <h2>Get Contact</h2>
+            <h2 class="en">Get Contact</h2>
+            <h2 class="vi hidden">Liên hệ ngay</h2>
             <div class="wrapper-full container">
-                <div id="contact-info" class="wrapper-half">
-                    <div id="chat-with-me" class="contact-box flat-block duo">
-                        <h3 class="highlight-title">Chat with me</h3>
-                        <p class="content">Chat platform is the best channel to converse with me</p>
-                        <div class="button-link">
-                            <button><a href="https://zalo.me/84383398867">Zalo <i
-                                        class="fi fi-rs-cursor-finger"></i></a></button>
-                            <button><a href="https://m.me/vuong.xoaic">Messenger <i
-                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                <div class="wrapper-half">
+                    <h3 class="en"><i>Please </i> choose:</h3>
+                    <h3 class="vi hidden"><i>Bạn có thể</i> lựa chọn:</h3>
+                    <div id="contact-info">
+                        <div id="chat-with-me" class="contact-box flat-block duo">
+                            <h3 class="highlight-title en">Chat with me</h3>
+                            <h3 class="highlight-title vi hidden">Trò chuyện</h3>
+                            <p class="content en">Chat platform is the best channel to converse with me</p>
+                            <p class="content vi hidden">Nền tảng trò chuyện là cách tôi yêu thích nhất</p>
+                            <div class="button-link">
+                                <button><a href="https://zalo.me/84383398867">Zalo</a></button>
+                                <button><a href="https://m.me/vuong.xoaic">Messenger</a></button>
+                            </div>
                         </div>
-                    </div>
-                    <div id="call-to-me" class="contact-box flat-block-2 duo">
-                        <h3 class="highlight-title-2">Call to me</h3>
-                        <p class="content">If you don't want to wait... but, please call me in the working time</p>
-                        <div class="button-link">
-                            <button><a href="tel:84383398867">+84383398867 <i
-                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                        <div id="call-to-me" class="contact-box flat-block-2 duo">
+                            <h3 class="highlight-title-2 en">Call to me</h3>
+                            <h3 class="highlight-title-2 vi hidden">Gọi điện</h3>
+                            <p class="content en">If you don't want to wait... but, please call me in the working time
+                            </p>
+                            <p class="content vi hidden">Nếu bạn đang nóng lòng... à, làm ơn gọi vào giờ hành chính nhé
+                                ;&rsaquo;</p>
+                            <div class="button-link">
+                                <button><a href="tel:84383398867">+84383398867</a></button>
+                            </div>
                         </div>
-                    </div>
-                    <div id="hire-me-in" class="contact-box flat-block-2 duo">
-                        <h3 class="highlight-title-2">Hire me in</h3>
-                        <p class="content">A good way to know more about me before hiring</p>
-                        <div class="button-link">
-                            <button><a href="https://www.linkedin.com/in/vuong-xoaicc/">Linkedln <i
-                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                        <div id="hire-me-in" class="contact-box flat-block-2 duo">
+                            <h3 class="highlight-title-2 en">Hire me in</h3>
+                            <h3 class="highlight-title-2 vi hidden">Thuê trên</h3>
+                            <p class="content en">A good way to know more about me before hiring</p>
+                            <p class="content vi hidden">Cũng là một cách để tìm hiểu thêm về tớ trước khi thuê</p>
+                            <div class="button-link">
+                                <button><a href="https://www.linkedin.com/in/vuong-xoaicc/">Linkedln</a></button>
+                            </div>
                         </div>
-                    </div>
-                    <div id="face-to-face" class="contact-box flat-block duo">
-                        <h3 class="highlight-title">Face to face</h3>
-                        <p class="content">Well, you are so serious when take this choice</p>
-                        <div class="button-link">
-                            <button><a href="https://goo.gl/maps/Tu7J376FYyiNbBEu7">Google Maps <i
-                                        class="fi fi-rs-cursor-finger"></i></a></button>
+                        <div id="face-to-face" class="contact-box flat-block duo">
+                            <h3 class="highlight-title en">Face to face</h3>
+                            <h3 class="highlight-title vi hidden">Gặp trực tiếp</h3>
+                            <p class="content en">Well, let's go outside and take a coffee cup together!</p>
+                            <p class="content vi hidden">Chà, hãy làm một tách cà phê cùng nhau chứ nhỉ!</p>
+                            <div class="button-link">
+                                <button><a href="https://goo.gl/maps/Tu7J376FYyiNbBEu7">Google Maps</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="contact-form" class="wrapper-half">
-                    <h3><i>or</i> Send me an email</h3>
+                    <h3 class="en"><i>or</i> send me an email</h3>
+                    <h3 class="vi hidden"><i>hoặc</i> gửi tôi một bức thư</h3>
                     <form method="post" class="flat-block-2">
                         <div id="name-input" class="form-group">
                             <div class="form-half">
-                                <label for="fname">First name:</label><br>
+                                <label for="fname" class="en">First name:</label><br>
+                                <label for="fname" class="vi hidden">Họ và tên đệm:</label><br>
                                 <input type="text" id="fname" name="firstname" required="true">
                             </div>
                             <div class="form-half">
-                                <label for="lname">Last name:</label><br>
+                                <label for="lname" class="en">Last name:</label><br>
+                                <label for="lname" class="vi hidden">Tên:</label><br>
                                 <input type="text" id="lname" name="lastname" required="true">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Your email:</label><br>
+                            <label for="email" class="en">Your email:</label><br>
+                            <label for="email" class="vi hidden">Địa chỉ thư điện tử:</label><br>
                             <input type="email" id="email" name="email" required="true">
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject:</label><br>
+                            <label for="subject" class="en">Subject:</label><br>
+                            <label for="subject" class="vi hidden">Chủ đề:</label><br>
                             <input type="text" id="subject" name="subject" required="true">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="4" placeholder="Enter message..."></textarea>
+                            <label for="message" class="en">Message:</label><br>
+                            <label for="message" class="vi hidden">Tin nhắn:</label><br>
+                            <textarea id="message" class="en" name="message" rows="4"
+                                placeholder="Enter message..."></textarea>
+                            <textarea id="message" class="vi hidden" name="message" rows="4"
+                                placeholder="Nhập nội dung..."></textarea>
                         </div>
-                        <br>
-                        <input type="submit" value="Send message">
+                        <br />
+                        <div id="g-recaptcha" data-sitekey="6Lfp8WEpAAAAAIYlAGRHlvqUr2ujNnPjMXWI6A2U"></div>
+                        <br />
+                        <input class="en" type="submit" value="Send message">
+                        <input class="vi hidden" type="submit" value="Gửi thư">
                     </form>
                 </div>
             </div>
@@ -442,5 +729,27 @@
     <footer>
         ©2023 XoaiCV by XoaiCC with love
     </footer>
+
+    <script type="text/javascript" src="./functions/firstLoad.js"></script>
+    <script type="text/javascript" src="./functions/switchLang.js"></script>
+    <script type="text/javascript" src="./functions/switchMode.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("kHs6dn52cAEWjm5JU");
+        })();
+
+        var onloadCallback = function () {
+            const gRecaptcha = document.getElementById("g-recaptcha");
+
+            grecaptcha.render(gRecaptcha, {
+                'sitekey': '6Lfp8WEpAAAAAIYlAGRHlvqUr2ujNnPjMXWI6A2U'
+            });
+        };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+    <script type="text/javascript" src="./functions/sendMail.js"></script>
 </body>
 </html>

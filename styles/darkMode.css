@@ -1,0 +1,160 @@
+body.dark,
+body.dark button,
+body.dark select,
+body.dark option,
+body.dark input,
+body.dark textarea {
+    color: var(--color-1d-100);
+}
+
+body.dark button,
+body.dark select {
+    background-color: var(--color-3d-100);
+    border: 3px solid var(--color-2d-100);
+}
+
+body.dark button+button {
+    background-color: var(--color-3d-100);
+    border: 3px solid var(--color-4d-100);
+}
+
+body.dark input,
+body.dark textarea {
+    background-color: var(--color-0d-100);
+    border: 3px solid var(--color-2d-100);
+}
+
+body.dark input:focus,
+body.dark textarea:focus {
+    border: 3px solid var(--color-5d-100);
+}
+
+body.dark .path-line::before {
+    color: var(--color-4d-100);
+}
+
+body.dark .path-line::after {
+    border: 2px dashed var(--color-4d-100);
+}
+
+body.dark .flat-block {
+    background-color: var(--color-3d-100);
+    border: 3px solid var(--color-2d-100);
+    box-shadow: -6px 6px 0 var(--color-1d-100);
+}
+
+body.dark .flat-block:hover,
+body.dark .flat-block:active {
+    box-shadow: none;
+}
+
+body.dark .flat-block-2 {
+    background-color: var(--color-3d-100);
+    border: 3px solid var(--color-4d-100);
+}
+
+body.dark .flat-block-2:hover,
+body.dark .flat-block-2:active {
+    box-shadow: -6px 6px 0 var(--color-5d-100);
+}
+
+body.dark .inline-list li.odd {
+    border: 3px solid var(--color-2d-100);
+}
+
+body.dark .inline-list li.even {
+    border: 3px solid var(--color-4d-100);
+}
+
+body.dark .highlight-title {
+    background-color: var(--color-2d-50);
+    border: 3px solid var(--color-2d-100);
+}
+
+body.dark .highlight-title-2 {
+    background-color: var(--color-4d-50);
+    border: 3px solid var(--color-4d-100);
+}
+
+body.dark .dash {
+    border-top: 3px dashed var(--color-2d-100);
+}
+
+body.dark .dash-2 {
+    border-top: 3px dashed var(--color-4d-100);
+}
+
+body.dark {
+    background-color: var(--color-0d-100);
+}
+
+body.dark span.grade {
+    color: var(--color-5d-100);
+}
+
+body.dark header #switcher #mode-switcher i {
+    border: 3px solid var(--color-2d-100);
+}
+
+body.dark header #mobile>i {
+    border: 3px solid var(--color-2d-100);
+}
+
+body.dark header #mobile #mobile-menu {
+    background-color: var(--color-3d-100);
+    border: 3px solid var(--color-2d-100);
+    box-shadow: -6px 6px 0 var(--color-1d-100);
+}
+
+header #mobile #mobile-menu a {
+    border-bottom: 3px dashed var(--color-2d-100);
+}
+
+body.dark main section h2 {
+    border: 3px solid var(--color-4d-100);
+}
+
+body.dark main #intro {
+    background-color: var(--color-3d-100);
+}
+
+body.dark main #intro #intro-content h1 {
+    -webkit-text-stroke: 3px var(--color-2d-50);
+}
+
+body.dark main #resume {
+    background-color: var(--color-3d-50);
+}
+
+body.dark main #resume #my-feature .feature .count {
+    color: var(--color-5d-100);
+    background-color: var(--color-3d-100);
+}
+
+body.dark main #resume #my-info #info-list li span {
+    background-color: var(--color-2d-50);
+}
+
+body.dark main #qualification {
+    background-color: var(--color-3d-100);
+}
+
+body.dark main #qualification #my-certification div.carousel .carousel-inner img.odd {
+    border: 3px solid var(--color-2d-100);
+}
+
+body.dark main #qualification #my-certification div.carousel .carousel-inner img.even {
+    border: 3px solid var(--color-4d-100);
+}
+
+body.dark main #experience {
+    background-color: var(--color-3d-50);
+}
+
+body.dark main #portfolio {
+    background-color: var(--color-3d-100);
+}
+
+body.dark main #contact {
+    background-color: var(--color-3d-50);
+}
