@@ -79,6 +79,7 @@ i::before {
 
 button,
 select {
+    margin-bottom: 5px;
     background-color: var(--color-3l-100);
     border: 3px solid var(--color-2l-100);
     padding: 5px;
@@ -216,6 +217,7 @@ input[type="submit"] {
 
 .inline-list li {
     display: inline-block;
+    margin-bottom: 5px;
 }
 
 .inline-list li.odd {
@@ -400,6 +402,16 @@ main #intro {
     overflow: hidden;
 }
 
+main #intro::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: center no-repeat url("/assets/backgrounds/hero-background.png");
+}
+
 main #intro div.container {
     width: 60%;
     text-align: center;
@@ -415,12 +427,49 @@ main #intro #intro-content h1 {
     transform: rotate(-10deg);
     color: transparent;
     -webkit-text-stroke: 3px var(--color-2l-50);
-    z-index: 0;
+    z-index: 1;
 }
 
 main #intro #intro-content div.content {
     position: relative;
     z-index: 1;
+    background: transparent;
+    opacity: .5;
+}
+
+main #intro #intro-content div.content:hover {
+    opacity: 1;
+    background-color: var(--color-3l-100);
+}
+
+main #intro #intro-content div.content * {
+    opacity: 0;
+    transform: translateX(-100%);
+    transform-origin: left;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+main #intro #intro-content div.content:hover * {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+main #intro #intro-content div.content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: center no-repeat url("/assets/backgrounds/hero-background.png");
+    filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+main #intro #intro-content div.content:hover::before {
+    display: none;
 }
 
 main #intro #intro-content div.content button {
@@ -543,26 +592,27 @@ main #qualification #my-skill div.item-inner {
 }
 
 main #qualification #my-certification div.carousel .carousel-inner {
-    display: flex;
     padding: 10px;
-    overflow-x: scroll;
+    display: flex;
+    overflow-x: auto;
 }
 
-main #qualification #my-certification div.carousel .carousel-inner img {
-    max-height: 300px;
-    height: auto;
+main #qualification #my-certification div.carousel .carousel-inner a {
+    padding: 10px;
+    cursor: pointer;
 }
 
-main #qualification #my-certification div.carousel .carousel-inner img+img {
-    margin-left: 10px;
-}
-
-main #qualification #my-certification div.carousel .carousel-inner img.odd {
+main #qualification #my-certification div.carousel .carousel-inner a.odd img {
     border: 3px solid var(--color-2l-100);
 }
 
-main #qualification #my-certification div.carousel .carousel-inner img.even {
+main #qualification #my-certification div.carousel .carousel-inner a.even img {
     border: 3px solid var(--color-4l-100);
+}
+
+main #qualification #my-certification div.carousel .carousel-inner a img {
+    max-height: 300px;
+    height: auto;
 }
 
 main #experience {
@@ -635,6 +685,10 @@ main #contact #contact-form {
 main #contact #contact-form #name-input {
     display: flex;
     justify-content: space-between;
+}
+
+main #contact #contact-form .form-group+.form-group {
+    margin-top: 10px;
 }
 
 main #contact #contact-form .form-half {

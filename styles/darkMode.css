@@ -122,6 +122,10 @@ body.dark main #intro #intro-content h1 {
     -webkit-text-stroke: 3px var(--color-2d-50);
 }
 
+body.dark main #intro #intro-content div.content:hover {
+    background-color: var(--color-3d-100);
+}
+
 body.dark main #resume {
     background-color: var(--color-3d-50);
 }
@@ -139,11 +143,11 @@ body.dark main #qualification {
     background-color: var(--color-3d-100);
 }
 
-body.dark main #qualification #my-certification div.carousel .carousel-inner img.odd {
+body.dark main #qualification #my-certification div.carousel .carousel-inner a.odd img {
     border: 3px solid var(--color-2d-100);
 }
 
-body.dark main #qualification #my-certification div.carousel .carousel-inner img.even {
+body.dark main #qualification #my-certification div.carousel .carousel-inner a.even img {
     border: 3px solid var(--color-4d-100);
 }
 
