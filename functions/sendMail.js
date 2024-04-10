@@ -10,7 +10,7 @@ form.onsubmit = (e) => {
     if (!submitBtn.disabled) {
         submitBtn.disabled = true;
 
-        emailjs.sendForm("service_xoaicv", "template_xoaicv", form)
+        emailjs.sendForm("service_xoaicv_gmail", "template_xoaicv", form)
             .then(() => {
                 currentLang === "vi" ? alert("Thư đã được gửi thành công! Hãy kiểm tra hòm thư của bạn") : alert("Email has been sent successfully! Please check your inbox");
             })
